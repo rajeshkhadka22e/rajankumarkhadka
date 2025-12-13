@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rajesh khadka</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css " />
+</head>
+
+<body>
+
+     <section class="">
+<header class="fixed top-0 left-0 w-full bg-[#262b33] z-50">
+<div class="max-w-[1024px] mx-auto  h-[64px] flex items-center justify-between">
+
+
+<!-- Logo -->
+<div class="flex items-center gap-2 text-white font-semibold">
+  <a href="/"><span class="text-purple-400">#</span> Elias
+</a></div>
+
+
+<!-- Desktop Menu -->
+<nav class="hidden md:flex items-center gap-6 text-base">
+<a href="index.html" class="text-gray-400 hover:text-white"><span class="text-purple-400">#</span>home</a>
+<a href="project.html" class="text-white"><span class="text-purple-400">#</span>works</a>
+<a href="about.html" class="text-gray-400 hover:text-white"><span class="text-purple-400">#</span>about-me</a>
+<a href="contact.html" class="text-gray-400 hover:text-white"><span class="text-purple-400">#</span>contacts</a>
+</nav>
+
+
+<!-- Mobile Button -->
+<button id="menuBtn" class="md:hidden text-white text-2xl">☰</button>
+</div>
+</header>
+
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu" class="fixed inset-0 bg-[#262b33] hidden z-50">
+<div class="flex items-center justify-between px-6 h-[64px]">
+<div class="text-white font-semibold"><span class="text-purple-400">#</span> Elias</div>
+<button id="closeBtn" class="text-white text-2xl">✕</button>
+</div>
+
+
+<nav class="px-6 pt-6 space-y-4 text-lg">
+<a href="#home" class="block text-white"><span class="text-purple-400">#</span>home</a>
+<a href="#works" class="block text-gray-400"><span class="text-purple-400">#</span>works</a>
+<a href="#about" class="block text-gray-400"><span class="text-purple-400">#</span>about-me</a>
+<a href="#contact" class="block text-gray-400"><span class="text-purple-400">#</span>contacts</a>
+
+
+</nav>
+</div>
+
+
+<script>
+const menuBtn = document.getElementById('menuBtn');
+const closeBtn = document.getElementById('closeBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+
+
+menuBtn.onclick = () => mobileMenu.classList.remove('hidden');
+closeBtn.onclick = () => mobileMenu.classList.add('hidden');
+</script>
+    </section>
+
+    <section class="mt-[74px] ">
+        <div class="max-w-[1024px] mx-auto px-4 lg:px-0 ">
+            <h2 class="text-xl leading-[32px] text-white font-semibold"> <span class="text-primary">/</span>Projects
+            </h2>
+            <p class="text-sm text-gray ">List of my project</p>
+            <div class="mt-[61px] mb-[40px]">
+                <h2 class="text-xl text-white font-semibold"> <span class="text-primary">#</span> Complete-Projects</h2>
+
+            </div>
+        </div>
+
+
+        <div class=" relative">
+            <div class="max-w-[1024px] mx-auto px-4 sm:px-0">
+
+                <div class=" grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <div
+                        class="flex flex-col border border-[var(--gray)] hover:border-[var(--primary)]  transition-all duration-300 cursor-pointer">
+                        <img src="image/Rectangle 22.png" class="h-[150px] object-cover" alt="project 1" />
+                        <h3 class="text-[var(--gray)] capitalize text-sm p-4 font-medium border-y line-clamp-2">
+                            html css javascript
+                        </h3>
+                        <div class="space-y-3 p-4">
+                            <h4 class="text-xl font-medium text-white">project name</h4>
+                            <p class="text-sm text-[var(--gray)]">
+                                Minecraft servers hosting
+                            </p>
+                            <div class="flex gap-4">
+                                <a href="#"
+                                    class="p-1 border border-[var(--primary)] hover:border-[var(--gray)] transition-all duration-300 cursor-pointer">Live
+                                    <~>
+                                </a>
+                                <a href="#"
+                                    class="p-1 border border-[var(--gray)] hover:border-[var(--primary)] transition-all duration-300 cursor-pointer">Cached
+                                    >=</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-col border border-[var(--gray)] hover:border-[var(--primary)] transition-all duration-300 cursor-pointer">
+                        <img src="image/Rectangle 22.png" class="h-[150px] object-cover" alt="project 1" />
+                        <h3 class="text-[var(--gray)] capitalize text-sm p-4 font-medium border-y line-clamp-2">
+                            html css javascript
+                        </h3>
+                        <div class="space-y-3 p-4">
+                            <h4 class="text-xl font-medium text-white">project name</h4>
+                            <p class="text-sm text-[var(--gray)]">
+                                Minecraft servers hosting
+                            </p>
+                            <div class="flex gap-4">
+                                <a href="#"
+                                    class="p-1 border border-[var(--primary)] hover:border-[var(--gray)] transition-all duration-300 cursor-pointer">Live
+                                    <~>
+                                </a>
+                                <a href="#"
+                                    class="p-1 border border-[var(--gray)] hover:border-[var(--primary)] transition-all duration-300 cursor-pointer">Cached
+                                    >=</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-col border border-[var(--gray)] hover:border-[var(--primary)] transition-all duration-300 cursor-pointer">
+                        <img src="image/Rectangle 22.png" class="h-[150px] object-cover" alt="project 1" />
+                        <h3 class="text-[var(--gray)] capitalize text-sm p-4 font-medium border-y line-clamp-2">
+                            html css javascript
+                        </h3>
+                        <div class="space-y-3 p-4">
+                            <h4 class="text-xl font-medium text-white">project name</h4>
+                            <p class="text-sm text-[var(--gray)]">
+                                Minecraft servers hosting
+                            </p>
+                            <div class="flex gap-4">
+                                <a href="#"
+                                    class="p-1 border border-[var(--primary)] hover:border-[var(--gray)] transition-all duration-300 cursor-pointer">Live
+                                    <~>
+                                </a>
+                                <a href="#"
+                                    class="p-1 border border-[var(--gray)] hover:border-[var(--primary)] transition-all duration-300 cursor-pointer">Cached
+                                    >=</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute hidden md:flex top-30 -left-8 justify-left">
+                <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="2" cy="2" r="2" fill="#fafafa" />
+                    <circle cx="22" cy="2" r="2" fill="#fafafa" />
+                    <circle cx="42" cy="2" r="2" fill="#fafafa" />
+                    <circle cx="62" cy="2" r="2" fill="#fafafa" />
+                    <circle cx="82" cy="2" r="2" fill="#fafafa" />
+                    <circle cx="2" cy="22" r="2" fill="#fafafa" />
+                    <circle cx="22" cy="22" r="2" fill="#fafafa" />
+                    <circle cx="42" cy="22" r="2" fill="#fafafa" />
+                    <circle cx="62" cy="22" r="2" fill="#fafafa" />
+                    <circle cx="82" cy="22" r="2" fill="#fafafa" />
+                    <circle cx="2" cy="42" r="2" fill="#fafafa" />
+                    <circle cx="22" cy="42" r="2" fill="#fafafa" />
+                    <circle cx="42" cy="42" r="2" fill="#fafafa" />
+                    <circle cx="62" cy="42" r="2" fill="#fafafa" />
+                    <circle cx="82" cy="42" r="2" fill="#fafafa" />
+                    <circle cx="2" cy="62" r="2" fill="#fafafa" />
+                    <circle cx="22" cy="62" r="2" fill="#fafafa" />
+                    <circle cx="42" cy="62" r="2" fill="#fafafa" />
+                    <circle cx="62" cy="62" r="2" fill="#fafafa" />
+                    <circle cx="82" cy="62" r="2" fill="#fafafa" />
+                    <circle cx="2" cy="82" r="2" fill="#fafafa" />
+                    <circle cx="22" cy="82" r="2" fill="#fafafa" />
+                    <circle cx="42" cy="82" r="2" fill="#fafafa" />
+                    <circle cx="62" cy="82" r="2" fill="#fafafa" />
+                    <circle cx="82" cy="82" r="2" fill="#fafafa" />
+                </svg>
+            </div>
+            <div class="absolute hidden md:flex bottom-10 right-0 h-30 mt-3 w-16 border-y border-l border-[var(--gray)]"></div>
+        </div>
+    </section>
+
+
+
+    <!-- small project -->
+    <section class="relative">
+        <div class="max-w-[1024px] relative  mx-auto px-4 lg:px-0">
+            <h2 class="text-xl text-white font-semibold mt-[61px] mb-[40px]"> <span class="text-primary">#</span>
+                small-projects</h2>
+            <div class=" grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <div
+                    class="flex flex-col border border-[var(--gray)] hover:border-[var(--primary)]  transition-all duration-300 cursor-pointer">
+                    <h3 class="text-[var(--gray)] capitalize text-sm p-4 font-medium border-y line-clamp-2">
+                        html css javascript
+                    </h3>
+                    <div class="space-y-3 p-4">
+                        <h4 class="text-xl font-medium text-white">project name</h4>
+                        <p class="text-sm text-[var(--gray)]">
+                            Minecraft servers hosting
+                        </p>
+                        <div class="flex gap-4">
+                            <a href="#"
+                                class="p-1 border border-[var(--primary)] hover:border-[var(--gray)] transition-all duration-300 cursor-pointer">Live
+                                <~>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                    <div class="absolute hidden md:flex bottom-10 left-0 h-36 mt-3 w-16 border-y border-r border-[var(--gray)]"></div>
+         <div class="absolute hidden md:flex top-40 right-0 justify-left">
+                <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="2" cy="2" r="2" fill="#fafafa" />
+                    <circle cx="22" cy="2" r="2" fill="#fafafa" />
+                    <circle cx="42" cy="2" r="2" fill="#fafafa" />
+                    <circle cx="62" cy="2" r="2" fill="#fafafa" />
+                    <circle cx="82" cy="2" r="2" fill="#fafafa" />
+                    <circle cx="2" cy="22" r="2" fill="#fafafa" />
+                    <circle cx="22" cy="22" r="2" fill="#fafafa" />
+                    <circle cx="42" cy="22" r="2" fill="#fafafa" />
+                    <circle cx="62" cy="22" r="2" fill="#fafafa" />
+                    <circle cx="82" cy="22" r="2" fill="#fafafa" />
+                    <circle cx="2" cy="42" r="2" fill="#fafafa" />
+                    <circle cx="22" cy="42" r="2" fill="#fafafa" />
+                    <circle cx="42" cy="42" r="2" fill="#fafafa" />
+                    <circle cx="62" cy="42" r="2" fill="#fafafa" />
+                    <circle cx="82" cy="42" r="2" fill="#fafafa" />
+                    <circle cx="2" cy="62" r="2" fill="#fafafa" />
+                    <circle cx="22" cy="62" r="2" fill="#fafafa" />
+                    <circle cx="42" cy="62" r="2" fill="#fafafa" />
+                    <circle cx="62" cy="62" r="2" fill="#fafafa" />
+                    <circle cx="82" cy="62" r="2" fill="#fafafa" />
+                    <circle cx="2" cy="82" r="2" fill="#fafafa" />
+                    <circle cx="22" cy="82" r="2" fill="#fafafa" />
+                    <circle cx="42" cy="82" r="2" fill="#fafafa" />
+                    <circle cx="62" cy="82" r="2" fill="#fafafa" />
+                    <circle cx="82" cy="82" r="2" fill="#fafafa" />
+                </svg>
+            </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rajesh khadka</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css " />
+</head>
+
+<body>
+
+
+     <section class="">
+<header class="fixed top-0 left-0 w-full bg-[#262b33] z-50">
+<div class="max-w-[1024px] mx-auto  h-[64px] flex items-center justify-between">
+
+
+<!-- Logo -->
+<div class="flex items-center gap-2 text-white font-semibold">
+  <a href="/"><span class="text-purple-400">#</span> Elias
+</a>
+</div>
+
+
+<!-- Desktop Menu -->
+<nav class="hidden md:flex items-center gap-6 text-base">
+<a href="index.html" class="text-gray-400 hover:text-white"><span class="text-purple-400">#</span>home</a>
+<a href="project.html" class="text-gray-400 hover:text-white"><span class="text-purple-400">#</span>works</a>
+<a href="about.html" class="text-white"><span class="text-purple-400">#</span>about-me</a>
+<a href="contact.html" class="text-gray-400 hover:text-white"><span class="text-purple-400">#</span>contacts</a>
+</nav>
+
+
+<!-- Mobile Button -->
+<button id="menuBtn" class="md:hidden text-white text-2xl">☰</button>
+</div>
+</header>
+
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu" class="fixed inset-0 bg-[#262b33] hidden z-50">
+<div class="flex items-center justify-between px-6 h-[64px]">
+<div class="text-white font-semibold"><span class="text-purple-400">#</span> Elias</div>
+<button id="closeBtn" class="text-white text-2xl">✕</button>
+</div>
+
+
+<nav class="px-6 pt-6 space-y-4 text-lg">
+<a href="#home" class="block text-white"><span class="text-purple-400">#</span>home</a>
+<a href="#works" class="block text-gray-400"><span class="text-purple-400">#</span>works</a>
+<a href="#about" class="block text-gray-400"><span class="text-purple-400">#</span>about-me</a>
+<a href="#contact" class="block text-gray-400"><span class="text-purple-400">#</span>contacts</a>
+
+
+</nav>
+</div>
+
+
+<script>
+const menuBtn = document.getElementById('menuBtn');
+const closeBtn = document.getElementById('closeBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+
+
+menuBtn.onclick = () => mobileMenu.classList.remove('hidden');
+closeBtn.onclick = () => mobileMenu.classList.add('hidden');
+</script>
+    </section>
+
+    <!-- about me -->
+       <section class="mt-[74px] relative">
+        <div class="relative max-w-[1024px] mx-auto px-4 sm:px-0">
+
+            <div class="grid grid-cols-1 md:gap-[166px] sm:grid-cols-2 lg:grid-cols-[515px_343px]">
+                <div class="flex flex-col gap-[23px]">
+                    <div class="flex gap-10 text-center justify-between items-center">
+                        <div class="flex items-center">
+                            <h2 class="text-[32px] font-medium text-white">
+                                <span class="text-primary">#</span>about-me
+                            </h2>
+                            <span class="h-[1px] w-[100px] lg:w-[200px] bg-[var(--primary)] inline-block"></span>
+                        </div>
+                    </div>
+                    <p class="text-base text-[var(--gray)] leading-[26px]">
+                        Hello, i’m Elias!
+                        <br>
+                        <br>
+                        I’m a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive websites
+                        from scratch and raise them into modern user-friendly web experiences.
+                        <br><br>
+                        Transforming my creativity and knowledge into a websites has been my passion for over a year. I
+                        have been helping various clients to establish their presence online. I always strive to learn
+                        about the newest technologies and frameworks.
+                    </p>
+
+                    <div class="">
+                        <a class="border border-[var(--primary)] px-2 py-1 max-w-max hover:border-[var(--gray)] transition-all duration-300 cursor-pointer"
+                            href="#">Read more -></a>
+                    </div>
+                </div>
+                <div class="max-h-[450px]">
+                    <img src="image/rajesh.png" class="lg:h-[450px]  object-cover"
+                        alt="profile image of rajan kumar khadka">
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-42 hidden md:flex left-0 h-42 mt-3 w-16 border-y border-r border-[var(--gray)]"></div>
+        <div class="absolute bottom-42 hidden md:flex right-0 h-42 mt-3 w-16 border-y border-l border-[var(--gray)]"></div>
+
+        <div class="absolute hidden md:flex bottom-0 right-48 justify-left">
+            <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="2" cy="2" r="2" fill="#fafafa" />
+                <circle cx="22" cy="2" r="2" fill="#fafafa" />
+                <circle cx="42" cy="2" r="2" fill="#fafafa" />
+                <circle cx="62" cy="2" r="2" fill="#fafafa" />
+                <circle cx="82" cy="2" r="2" fill="#fafafa" />
+                <circle cx="2" cy="22" r="2" fill="#fafafa" />
+                <circle cx="22" cy="22" r="2" fill="#fafafa" />
+                <circle cx="42" cy="22" r="2" fill="#fafafa" />
+                <circle cx="62" cy="22" r="2" fill="#fafafa" />
+                <circle cx="82" cy="22" r="2" fill="#fafafa" />
+                <circle cx="2" cy="42" r="2" fill="#fafafa" />
+                <circle cx="22" cy="42" r="2" fill="#fafafa" />
+                <circle cx="42" cy="42" r="2" fill="#fafafa" />
+                <circle cx="62" cy="42" r="2" fill="#fafafa" />
+                <circle cx="82" cy="42" r="2" fill="#fafafa" />
+                <circle cx="2" cy="62" r="2" fill="#fafafa" />
+                <circle cx="22" cy="62" r="2" fill="#fafafa" />
+                <circle cx="42" cy="62" r="2" fill="#fafafa" />
+                <circle cx="62" cy="62" r="2" fill="#fafafa" />
+                <circle cx="82" cy="62" r="2" fill="#fafafa" />
+                <circle cx="2" cy="82" r="2" fill="#fafafa" />
+                <circle cx="22" cy="82" r="2" fill="#fafafa" />
+                <circle cx="42" cy="82" r="2" fill="#fafafa" />
+                <circle cx="62" cy="82" r="2" fill="#fafafa" />
+                <circle cx="82" cy="82" r="2" fill="#fafafa" />
+            </svg>
+        </div>
+        <div class="absolute top-20 right-130 justify-left">
+            <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="2" cy="2" r="2" fill="#fafafa" />
+                <circle cx="22" cy="2" r="2" fill="#fafafa" />
+                <circle cx="42" cy="2" r="2" fill="#fafafa" />
+                <circle cx="62" cy="2" r="2" fill="#fafafa" />
+                <circle cx="82" cy="2" r="2" fill="#fafafa" />
+                <circle cx="2" cy="22" r="2" fill="#fafafa" />
+                <circle cx="22" cy="22" r="2" fill="#fafafa" />
+                <circle cx="42" cy="22" r="2" fill="#fafafa" />
+                <circle cx="62" cy="22" r="2" fill="#fafafa" />
+                <circle cx="82" cy="22" r="2" fill="#fafafa" />
+                <circle cx="2" cy="42" r="2" fill="#fafafa" />
+                <circle cx="22" cy="42" r="2" fill="#fafafa" />
+                <circle cx="42" cy="42" r="2" fill="#fafafa" />
+                <circle cx="62" cy="42" r="2" fill="#fafafa" />
+                <circle cx="82" cy="42" r="2" fill="#fafafa" />
+                <circle cx="2" cy="62" r="2" fill="#fafafa" />
+                <circle cx="22" cy="62" r="2" fill="#fafafa" />
+                <circle cx="42" cy="62" r="2" fill="#fafafa" />
+                <circle cx="62" cy="62" r="2" fill="#fafafa" />
+                <circle cx="82" cy="62" r="2" fill="#fafafa" />
+                <circle cx="2" cy="82" r="2" fill="#fafafa" />
+                <circle cx="22" cy="82" r="2" fill="#fafafa" />
+                <circle cx="42" cy="82" r="2" fill="#fafafa" />
+                <circle cx="62" cy="82" r="2" fill="#fafafa" />
+                <circle cx="82" cy="82" r="2" fill="#fafafa" />
+            </svg>
+        </div>
+    </section>
+
+
+    <!-- skills -->
+
+     <section class="mt-[74px] relative max-w-[1024px] mx-auto px-4 sm:px-0">
+        <div class="flex gap-10 text-center justify-between items-center">
+            <div class="flex items-center">
+                <h2 class="text-[32px] font-medium text-white">
+                    <span class="text-primary">#</span>skills
+                </h2>
+                <span class="h-[1px] w-[100px] lg:w-[200px] bg-[var(--primary)] inline-block"></span>
+            </div>
+        </div>
+       
+            <div class="mt-10 grid grid-cols-2 lg:grid-cols-3 gap-4 ">
+
+                <div class="border border-[var(--gray)] text-[var(--gray)] max-h-max [direction:ltr]">
+                    <h2 class="text-white font-medium p-1">language</h2>
+                    <div class="border-t border-t-[var(--gray)]">
+                        <p class="text-gray p-1 text-sm">HTML, CSS, JavaScript, TypeScript, Python, C/C++</p>
+                    </div>
+                </div>
+
+                <div class="border border-[var(--gray)] text-[var(--gray)] max-h-max [direction:ltr]">
+                    <h2 class="text-white font-medium p-1">language</h2>
+                    <div class="border-t border-t-[var(--gray)]">
+                        <p class="text-gray p-1 text-sm">HTML, CSS, JavaScript, TypeScript, Python, C/C++</p>
+                    </div>
+                </div>
+                <div class="border border-[var(--gray)] text-[var(--gray)] max-h-max [direction:ltr]">
+                    <h2 class="text-white font-medium p-1">language</h2>
+                    <div class="border-t border-t-[var(--gray)]">
+                        <p class="text-gray p-1 text-sm">HTML, CSS, JavaScript, TypeScript, Python, C/C++</p>
+                    </div>
+                </div>
+                <div class="border border-[var(--gray)] text-[var(--gray)] max-h-max [direction:ltr]">
+                    <h2 class="text-white font-medium p-1">language</h2>
+                    <div class="border-t border-t-[var(--gray)]">
+                        <p class="text-gray p-1 text-sm">HTML, CSS, JavaScript, TypeScript, Python, C/C++</p>
+                    </div>
+                </div>
+                <div class="border border-[var(--gray)] text-[var(--gray)] max-h-max [direction:ltr]">
+                    <h2 class="text-white font-medium p-1">language</h2>
+                    <div class="border-t border-t-[var(--gray)]">
+                        <p class="text-gray p-1 text-sm">HTML, CSS, JavaScript, TypeScript, Python, C/C++</p>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+
+<!-- education -->
+    <section>
+        <div class="max-w-[1024px] mx-auto px-4 lg:px-0 mt-[72px]">
+            <h2 class="text-[32px] leading-[32px] text-white font-semibold"> <span class="text-primary">#</span>Education
+            </h2>
+        <div class="grid grid-cols-1 lg:grid-cols-[584px_349px] gap-[59px] justify-between">
+                        <div class="">
+                            
+                        </div>
+
+            <div class="">
+                <svg width="" height="" viewBox="0 0 349 283" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="2" cy="40" r="2" fill="#ABB2BF" />
+                    <circle cx="16.75" cy="40" r="2" fill="#ABB2BF" />
+                    <circle cx="31.5" cy="40" r="2" fill="#ABB2BF" />
+                    <circle cx="46.25" cy="40" r="2" fill="#ABB2BF" />
+                    <circle cx="61" cy="40" r="2" fill="#ABB2BF" />
+                    <circle cx="2" cy="54.75" r="2" fill="#ABB2BF" />
+                    <circle cx="16.75" cy="54.75" r="2" fill="#ABB2BF" />
+                    <circle cx="31.5" cy="54.75" r="2" fill="#ABB2BF" />
+                    <circle cx="46.25" cy="54.75" r="2" fill="#ABB2BF" />
+                    <circle cx="61" cy="54.75" r="2" fill="#ABB2BF" />
+                    <circle cx="2" cy="69.5" r="2" fill="#ABB2BF" />
+                    <circle cx="16.75" cy="69.5" r="2" fill="#ABB2BF" />
+                    <circle cx="31.5" cy="69.5" r="2" fill="#ABB2BF" />
+                    <circle cx="46.25" cy="69.5" r="2" fill="#ABB2BF" />
+                    <circle cx="61" cy="69.5" r="2" fill="#ABB2BF" />
+                    <circle cx="2" cy="84.25" r="2" fill="#ABB2BF" />
+                    <circle cx="16.75" cy="84.25" r="2" fill="#ABB2BF" />
+                    <circle cx="31.5" cy="84.25" r="2" fill="#ABB2BF" />
+                    <circle cx="46.25" cy="84.25" r="2" fill="#ABB2BF" />
+                    <circle cx="61" cy="84.25" r="2" fill="#ABB2BF" />
+                    <circle cx="2" cy="99" r="2" fill="#ABB2BF" />
+                    <circle cx="16.75" cy="99" r="2" fill="#ABB2BF" />
+                    <circle cx="31.5" cy="99" r="2" fill="#ABB2BF" />
+                    <circle cx="46.25" cy="99" r="2" fill="#ABB2BF" />
+                    <circle cx="61" cy="99" r="2" fill="#ABB2BF" />
+                    <circle cx="179" cy="145" r="2" fill="#ABB2BF" />
+                    <circle cx="193.75" cy="145" r="2" fill="#ABB2BF" />
+                    <circle cx="208.5" cy="145" r="2" fill="#ABB2BF" />
+                    <circle cx="223.25" cy="145" r="2" fill="#ABB2BF" />
+                    <circle cx="238" cy="145" r="2" fill="#ABB2BF" />
+                    <circle cx="179" cy="159.75" r="2" fill="#ABB2BF" />
+                    <circle cx="193.75" cy="159.75" r="2" fill="#ABB2BF" />
+                    <circle cx="208.5" cy="159.75" r="2" fill="#ABB2BF" />
+                    <circle cx="223.25" cy="159.75" r="2" fill="#ABB2BF" />
+                    <circle cx="238" cy="159.75" r="2" fill="#ABB2BF" />
+                    <circle cx="179" cy="174.5" r="2" fill="#ABB2BF" />
+                    <circle cx="193.75" cy="174.5" r="2" fill="#ABB2BF" />
+                    <circle cx="208.5" cy="174.5" r="2" fill="#ABB2BF" />
+                    <circle cx="223.25" cy="174.5" r="2" fill="#ABB2BF" />
+                    <circle cx="238" cy="174.5" r="2" fill="#ABB2BF" />
+                    <circle cx="179" cy="189.25" r="2" fill="#ABB2BF" />
+                    <circle cx="193.75" cy="189.25" r="2" fill="#ABB2BF" />
+                    <circle cx="208.5" cy="189.25" r="2" fill="#ABB2BF" />
+                    <circle cx="223.25" cy="189.25" r="2" fill="#ABB2BF" />
+                    <circle cx="238" cy="189.25" r="2" fill="#ABB2BF" />
+                    <circle cx="179" cy="204" r="2" fill="#ABB2BF" />
+                    <circle cx="193.75" cy="204" r="2" fill="#ABB2BF" />
+                    <circle cx="208.5" cy="204" r="2" fill="#ABB2BF" />
+                    <circle cx="223.25" cy="204" r="2" fill="#ABB2BF" />
+                    <circle cx="238" cy="204" r="2" fill="#ABB2BF" />
+                    <rect x="297.5" y="193.5" width="51" height="51" stroke="#ABB2BF" />
+                    <rect x="227.5" y="0.5" width="85" height="85" stroke="#ABB2BF" />
+                    <mask id="path-53-inside-1_29_371" fill="white">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M71.5 169H99.75H128V197.25V225.5V253.75H99.75H71.5V225.5H99.75V197.25H71.5V169Z" />
+                    </mask>
+                    <path
+                        d="M71.5 169V168H70.5V169H71.5ZM128 169H129V168H128V169ZM128 253.75V254.75H129V253.75H128ZM71.5 253.75H70.5V254.75H71.5V253.75ZM71.5 225.5V224.5H70.5V225.5H71.5ZM99.75 225.5V226.5H100.75V225.5H99.75ZM99.75 197.25H100.75V196.25H99.75V197.25ZM71.5 197.25H70.5V198.25H71.5V197.25ZM99.75 168H71.5V170H99.75V168ZM128 168H99.75V170H128V168ZM129 197.25V169H127V197.25H129ZM129 225.5V197.25H127V225.5H129ZM129 253.75V225.5H127V253.75H129ZM99.75 254.75H128V252.75H99.75V254.75ZM99.75 252.75H71.5V254.75H99.75V252.75ZM72.5 253.75V225.5H70.5V253.75H72.5ZM71.5 226.5H99.75V224.5H71.5V226.5ZM98.75 197.25V225.5H100.75V197.25H98.75ZM71.5 198.25H99.75V196.25H71.5V198.25ZM70.5 169V197.25H72.5V169H70.5Z"
+                        fill="#C778DD" mask="url(#path-53-inside-1_29_371)" />
+                    <mask id="path-55-outside-2_29_371" maskUnits="userSpaceOnUse" x="14" y="196.25" width="59"
+                        height="87" fill="black">
+                        <rect fill="white" x="14" y="196.25" width="59" height="87" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15 197.25H43.25H71.5V225.5H43.25V253.75H71.5V282H43.25H15V253.75V225.5V197.25Z" />
+                    </mask>
+                    <path
+                        d="M15 197.25V196.25H14V197.25H15ZM71.5 197.25H72.5V196.25H71.5V197.25ZM71.5 225.5V226.5H72.5V225.5H71.5ZM43.25 225.5V224.5H42.25V225.5H43.25ZM43.25 253.75H42.25V254.75H43.25V253.75ZM71.5 253.75H72.5V252.75H71.5V253.75ZM71.5 282V283H72.5V282H71.5ZM15 282H14V283H15V282ZM43.25 196.25H15V198.25H43.25V196.25ZM71.5 196.25H43.25V198.25H71.5V196.25ZM72.5 225.5V197.25H70.5V225.5H72.5ZM43.25 226.5H71.5V224.5H43.25V226.5ZM44.25 253.75V225.5H42.25V253.75H44.25ZM43.25 254.75H71.5V252.75H43.25V254.75ZM70.5 253.75V282H72.5V253.75H70.5ZM71.5 281H43.25V283H71.5V281ZM15 283H43.25V281H15V283ZM14 253.75V282H16V253.75H14ZM14 225.5V253.75H16V225.5H14ZM14 197.25V225.5H16V197.25H14Z"
+                        fill="#C778DD" mask="url(#path-55-outside-2_29_371)" />
+                </svg>
+
+            </div>
+            </div>
+     </div>
+
+    </section>
+</body>
+</html>

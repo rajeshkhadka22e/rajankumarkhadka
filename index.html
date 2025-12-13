@@ -1,8 +1,8 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+     <meta charset="UTF-8">
 
     <!-- Title -->
     <title>Rajan Kumar Khadka</title>
@@ -43,25 +43,17 @@
 
     <!-- Favicon -->
     <link rel="icon" href="/porfile.jpeg" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rajesh khadka</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css " />
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika+Negative:wght@300..700&display=swap"
-        rel="stylesheet">
-
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- EmailJS Script -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- email js -->
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
             emailjs.init({
@@ -69,568 +61,600 @@
             });
         })();
     </script>
-
-    <!-- Custom JavaScript -->
-    <script src="script.js"></script>
 </head>
 
-<body class="text-white bg-black">
-
-    <nav class="bg-white sm:text-center sm:justify-center sm:items-center text-gray-700 fixed w-full z-50 shadow-lg">
-        <div class="max-w-7xl mx-auto py-3 ">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <!-- Logo/Brand Name -->
-                    <div class="hidden sm:flex-shrink-0 md:flex items-center text-xl font-bold">
-                        <span class="text-black">Rajan</span>
-                        <span class="text-gray-700 px-2">Kumar</span>
-                        <span class="text-red-500">Khadka</span>
-                    </div>
-
-                    <div class="flex-shrink-0 md:hidden flex items-center text-2xl font-bold">
-                        <span class="text-black">Rajan Khadka</span>
-                    </div>
-                </div>
-
-                <div class="hidden lg:flex space-x-2 items-center nav text-base">
-                    <!-- Navigation Links -->
-                    <a href="#hero" class=" font-medium">Home</a>
-                    <a href="#skills" class="font-medium">Skills</a>
-                    <a href="#education" class="font-medium">Education</a>
-                    <a href="#project" class="font-medium">Project</a>
-                    <a href="#Experience" class="font-medium">Experience</a>
-                    <a href="#contact" class="font-medium">Contact</a>
-                </div>
-
-              
+<body class="bg-[#1E1E1E]">
+    <!-- navbar section  -->
+    <section class="">
+<header class="fixed top-0 left-0 w-full bg-[#262b33] z-50">
+<div class="max-w-[1024px] mx-auto  h-[64px] flex items-center justify-between">
 
 
-                <!-- Hamburger Menu Button for Mobile -->
-                <div class="flex items-center lg:hidden">
-                    <button id="mobile-menu-button"
-                        class="inline-flex items-center justify-center p-2 rounded-md hover:bg-gray-100 focus:outline-none" aria-label="Open menu" aria-expanded="false">
-                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16" />
+<!-- Logo -->
+<div class="flex items-center gap-2 text-white font-semibold">
+    <a href="/"><span class="text-purple-400">#</span> Rajan Kumar Khadka
+</a>
+</div>
+
+
+<!-- Desktop Menu -->
+<nav class="hidden md:flex items-center gap-6 text-base">
+<a href="index.html" class="text-white"><span class="text-purple-400">#</span>home</a>
+<a href="project.html" class="text-gray-400 hover:text-white"><span class="text-purple-400">#</span>works</a>
+<a href="about.html" class="text-gray-400 hover:text-white"><span class="text-purple-400">#</span>about-me</a>
+<a href="contact.html" class="text-gray-400 hover:text-white"><span class="text-purple-400">#</span>contacts</a>
+</nav>
+
+
+<!-- Mobile Button -->
+<button id="menuBtn" class="md:hidden text-white text-2xl">☰</button>
+</div>
+</header>
+
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu" class="fixed inset-0 bg-[#262b33] hidden z-50">
+<div class="flex items-center justify-between px-6 h-[64px]">
+<div class="text-white font-semibold"><span class="text-purple-400">#</span> Elias</div>
+<button id="closeBtn" class="text-white text-2xl">✕</button>
+</div>
+
+
+<nav class="px-6 pt-6 space-y-4 text-lg">
+<a href="#home" class="block text-white"><span class="text-purple-400">#</span>home</a>
+<a href="#works" class="block text-gray-400"><span class="text-purple-400">#</span>works</a>
+<a href="#about" class="block text-gray-400"><span class="text-purple-400">#</span>about-me</a>
+<a href="#contact" class="block text-gray-400"><span class="text-purple-400">#</span>contacts</a>
+
+
+</nav>
+</div>
+
+
+<script>
+const menuBtn = document.getElementById('menuBtn');
+const closeBtn = document.getElementById('closeBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+
+
+menuBtn.onclick = () => mobileMenu.classList.remove('hidden');
+closeBtn.onclick = () => mobileMenu.classList.add('hidden');
+</script>
+    </section>
+
+    <!-- hero section -->
+    <section class="max-w-[1024px] mx-auto mt-20 px-4 sm:px-0">
+        <div
+            class="grid grid-cols-1 md:grid-cols-[537px_449px] max-h-[423px] mx-auto gap-3 justify-center items-center">
+            <div class="flex flex-col">
+                <h1 class="text-white text-[32px] font-semibold">
+                    Rajan is a <span class="text-primary">front-end </span> and
+                    <span class="text-primary">back-end developer</span>
+                </h1>
+                <p class="text-gray mt-[32px]">
+                    He crafts responsive websites where technologies meet creativity
+                </p>
+                <a href="contact.html"
+                    class="border border-[var(--primary)] hover:bg-[var(--primary)] hover:text-[var(--white)] px-3 py-2 mt-4 max-w-max transition-all duration-300">
+                    contact me !!
+            </a>
+            </div>
+            <div class="flex flex-col relative">
+                <img class="h-[400px] md:h-auto object-cover" src="image/rajesh.png" alt="hero image" />
+                <div class="absolute z-10 w-full h-full top-0 left-0">
+                    <div class="bottom-10 right-[44px] absolute">
+                        <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2" cy="2" r="2" fill="#fafafa" />
+                            <circle cx="22" cy="2" r="2" fill="#fafafa" />
+                            <circle cx="42" cy="2" r="2" fill="#fafafa" />
+                            <circle cx="62" cy="2" r="2" fill="#fafafa" />
+                            <circle cx="82" cy="2" r="2" fill="#fafafa" />
+                            <circle cx="2" cy="22" r="2" fill="#fafafa" />
+                            <circle cx="22" cy="22" r="2" fill="#fafafa" />
+                            <circle cx="42" cy="22" r="2" fill="#fafafa" />
+                            <circle cx="62" cy="22" r="2" fill="#fafafa" />
+                            <circle cx="82" cy="22" r="2" fill="#fafafa" />
+                            <circle cx="2" cy="42" r="2" fill="#fafafa" />
+                            <circle cx="22" cy="42" r="2" fill="#fafafa" />
+                            <circle cx="42" cy="42" r="2" fill="#fafafa" />
+                            <circle cx="62" cy="42" r="2" fill="#fafafa" />
+                            <circle cx="82" cy="42" r="2" fill="#fafafa" />
+                            <circle cx="2" cy="62" r="2" fill="#fafafa" />
+                            <circle cx="22" cy="62" r="2" fill="#fafafa" />
+                            <circle cx="42" cy="62" r="2" fill="#fafafa" />
+                            <circle cx="62" cy="62" r="2" fill="#fafafa" />
+                            <circle cx="82" cy="62" r="2" fill="#fafafa" />
+                            <circle cx="2" cy="82" r="2" fill="#fafafa" />
+                            <circle cx="22" cy="82" r="2" fill="#fafafa" />
+                            <circle cx="42" cy="82" r="2" fill="#fafafa" />
+                            <circle cx="62" cy="82" r="2" fill="#fafafa" />
+                            <circle cx="82" cy="82" r="2" fill="#fafafa" />
                         </svg>
-                    </button>
+                    </div>
+                    <div class="top-30 left-0 absolute">
+                        <svg width="156" height="156" viewBox="0 0 156 156" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1_64_1298" fill="white">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 39.75H38.75H77.5V78.5H38.75V117.25H77.5V156H38.75H0V117.25V78.5V39.75Z" />
+                            </mask>
+                            <path
+                                d="M0 39.75V38.75H-1V39.75H0ZM77.5 39.75H78.5V38.75H77.5V39.75ZM77.5 78.5V79.5H78.5V78.5H77.5ZM38.75 78.5V77.5H37.75V78.5H38.75ZM38.75 117.25H37.75V118.25H38.75V117.25ZM77.5 117.25H78.5V116.25H77.5V117.25ZM77.5 156V157H78.5V156H77.5ZM0 156H-1V157H0V156ZM38.75 38.75H0V40.75H38.75V38.75ZM77.5 38.75H38.75V40.75H77.5V38.75ZM78.5 78.5V39.75H76.5V78.5H78.5ZM38.75 79.5H77.5V77.5H38.75V79.5ZM39.75 117.25V78.5H37.75V117.25H39.75ZM38.75 118.25H77.5V116.25H38.75V118.25ZM76.5 117.25V156H78.5V117.25H76.5ZM77.5 155H38.75V157H77.5V155ZM0 157H38.75V155H0V157ZM-1 117.25V156H1V117.25H-1ZM-1 78.5V117.25H1V78.5H-1ZM-1 39.75V78.5H1V39.75H-1Z"
+                                fill="#C778DD" mask="url(#path-1-inside-1_64_1298)" />
+                            <mask id="path-3-outside-2_64_1298" maskUnits="userSpaceOnUse" x="76.5" y="0" width="80"
+                                height="119" fill="black">
+                                <rect fill="white" x="76.5" width="80" height="119" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M77.5 1H116.25H155V39.75V78.5V117.25H116.25H77.5V78.5H116.25V39.75H77.5V1Z" />
+                            </mask>
+                            <path
+                                d="M77.5 1V0H76.5V1H77.5ZM155 1H156V0H155V1ZM155 117.25V118.25H156V117.25H155ZM77.5 117.25H76.5V118.25H77.5V117.25ZM77.5 78.5V77.5H76.5V78.5H77.5ZM116.25 78.5V79.5H117.25V78.5H116.25ZM116.25 39.75H117.25V38.75H116.25V39.75ZM77.5 39.75H76.5V40.75H77.5V39.75ZM116.25 0H77.5V2H116.25V0ZM155 0H116.25V2H155V0ZM156 39.75V1H154V39.75H156ZM156 78.5V39.75H154V78.5H156ZM156 117.25V78.5H154V117.25H156ZM116.25 118.25H155V116.25H116.25V118.25ZM116.25 116.25H77.5V118.25H116.25V116.25ZM78.5 117.25V78.5H76.5V117.25H78.5ZM77.5 79.5H116.25V77.5H77.5V79.5ZM115.25 39.75V78.5H117.25V39.75H115.25ZM77.5 40.75H116.25V38.75H77.5V40.75ZM76.5 1V39.75H78.5V1H76.5Z"
+                                fill="#C778DD" mask="url(#path-3-outside-2_64_1298)" />
+                        </svg>
+                    </div>
+                </div>
+                <div
+                    class="px-2 flex gap-1 border-[var(--gray)] border relative max-w-max mx-auto justify-center items-center">
+                    <input id="link-checkbox" type="checkbox" value=""
+                        class="w-4 h-4 border border-default-medium rounded-xs bg-[var(--primary)] focus:ring-2 focus:ring-brand-soft" />
+                    <label class="flex items-center gap-2 cursor-pointer text-[var(--gray)]">
+                        Currently working on <span class="text-white">Portfolio</span>
+                    </label>
                 </div>
             </div>
         </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden lg:hidden text-white bg-black text-left">
-            <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="#hero" class="block text-lg font-medium mobile-menu-item">Home</a>
-                <a href="#skills" class="block text-lg font-medium mobile-menu-item">Skills</a>
-                <a href="#education" class="block text-lg font-medium mobile-menu-item">Education</a>
-                <a href="#project" class="block text-lg font-medium mobile-menu-item">Project</a>
-                <a href="#Experience" class="block text-lg font-medium mobile-menu-item">Experience</a>
-                <a href="#contact" class="block text-lg font-medium mobile-menu-item">Contact</a>
-          
-            </div>
-        </div>
-    </nav>
-
-    <script>
-        // Get elements
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const mobileMenuItems = document.querySelectorAll('.mobile-menu-item');
-
-        // Toggle mobile menu visibility
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Hide mobile menu when clicking on a menu item
-        mobileMenuItems.forEach(item => {
-            item.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        });
-    </script>
-
-
-
-    <!-- Hero -->
-
-    <section id="hero"
-        class="bg-gray-950 md:pb-0 sm:h-auto md:text-center md:pt-[30vh] lg:pt-[25vh] lg:h-[100vh] md:h-[100vh]  pt-[15vh]  text-white">
-        <div class="max-w-7xl flex flex-col lg:flex-row  m-auto">
-            <!-- Text Section -->
-            <div class="w-full lg:w-1/2 text-center lg:text-left">
-                <div class=" sm:w-full lg:me-auto items-center">
-                    <div class="flex lg:justify-start justify-center gap-3 items-center text-center mb-4">
-                        <!-- Facebook Icon -->
-                        <a href="https://www.facebook.com/rajankumarkhadkaa"
-                            class="border border-white px-3 p-1 rounded-lg text-white hover:bg-white  hover:text-black" target="_blank"    rel="noopener noreferrer"
-   aria-label="Visit my Facebook profile">
-
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-
-                        <!-- Instagram Icon -->
-                        <a href="https://www.instagram.com/rajankumarkhadkaa"
-                            class="border border-white px-3 p-1 rounded-lg hover:bg-white hover:text-black"
-                            target="_blank"    rel="noopener noreferrer"
-   aria-label="Visit my instagram profile">
-
-                            <i class="fab fa-instagram"></i>
-                        </a>
-
-                        <!-- LinkedIn Icon -->
-                        <a href="https://www.linkedin.com/in/rajankumarkhadka/"
-                            class="border border-white px-3 p-1 rounded-lg hover:bg-white hover:text-black"
-                            target="_blank"   rel="noopener noreferrer"
-   aria-label="Visit my linkendin-in profile">
-
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-
-                        <a href="mailto:rajeshkhadka22e@gmail.com"
-                            class="border border-white px-3 p-1 rounded-lg hover:bg-white hover:text-black"   rel="noopener noreferrer"
-   aria-label="Visit my email profile">
-
-                            <i class="fas fa-envelope text-xl text-gray-600 hover:text-red-600"></i>
-                        </a>
-                    </div>
-                    <div>
-                        <p class="text-3xl font-bold  opacity-80 leading-relaxed font-oswald">
-                            Hey there,<br> </p>
-                        <h1 class="text-3xl font-bold  opacity-80 leading-relaxed font-oswald">
-                            <span class="half-highlight">It's </span><span class="half-highlight">Rajan Kumar
-                                Khadka</span>
-                        </h1>
-                        <p class="mt-2 text-white text-lg font-poppins">
-                            I'm an eager and flexible individual, always excited to tackle new challenges. Learning is
-                            my passion, and I'm determined to deliver excellent results. With a positive outlook and a
-                            mindset focused on growth, I'm prepared to make a meaningful contribution and accomplish
-                            great things. </p>
-                        <div class="mb-5 lg:mt-14 flex gap-5  mt-8 justify-center lg:justify-start">
-                            <a href="#"
-                                class="px-7 py-2 border-2 font-bold border-black bg-white text-black rounded-xl gradient text-xl ">Hire
-                                me</a>
-                            <a href="#"
-                                class="px-7 py-2 border-2 font-bold border-black  bg-white text-black rounded-xl gradient text-xl ">My
-                                Portfolio</a>
-                        </div>
-                    </div>
+        <div class="md:mt-[116px] mt-[350px] flex flex-col max-w-[670px] mx-auto">
+            <div class="border-[var(--gray)] relative border px-2 py-4 items-center">
+                <h2 class="text-lg text-white">
+                    "Code is like humor. When you have to explain it, it’s bad."
+                </h2>
+                <div class="absolute -top-4">
+                    <svg width="42" height="29" viewBox="0 0 42 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="41.472" height="28.704" fill="#282C33" />
+                        <path
+                            d="M19.8271 3.5L19.6875 4.11133L17.1025 15.3838C17.6451 15.8304 18.0873 16.388 18.4287 17.0508H18.4277C18.8527 17.8129 19.0596 18.6723 19.0596 19.6162C19.0595 21.184 18.4796 22.5212 17.334 23.5967C16.2138 24.6684 14.8417 25.2041 13.248 25.2041C11.6141 25.2041 10.2261 24.6694 9.12207 23.5889L9.11816 23.5859C8.04002 22.5078 7.50005 21.1736 7.5 19.6162C7.5 18.8868 7.60236 18.1199 7.80273 17.3184C8.00637 16.504 8.40657 15.4781 8.98828 14.25L13.9482 3.78613L14.084 3.5H19.8271ZM34.1016 3.5L33.959 4.11328L31.3447 15.3799C31.9046 15.8264 32.357 16.3847 32.7002 17.0508H32.6992C33.1033 17.8135 33.2998 18.6726 33.2998 19.6162C33.2998 21.184 32.7198 22.5212 31.5742 23.5967C30.4351 24.6661 29.0643 25.204 27.4883 25.2041C25.8928 25.2041 24.5193 24.6669 23.3984 23.5928L23.3945 23.5889C22.2939 22.5116 21.7403 21.177 21.7402 19.6162C21.7402 18.8868 21.8426 18.1199 22.043 17.3184C22.2475 16.5004 22.6602 15.4717 23.2637 14.2432L28.2529 3.78516L28.3887 3.5H34.1016Z"
+                            fill="#ABB2BF" stroke="black" />
+                    </svg>
+                </div>
+                <div class="absolute  -bottom-4 right-2">
+                    <svg width="42" height="29" viewBox="0 0 42 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="41.472" height="28.704" fill="#282C33" />
+                        <path
+                            d="M18.56 19.616C18.56 21.0453 18.0373 22.2507 16.992 23.232C15.968 24.2133 14.72 24.704 13.248 24.704C11.7333 24.704 10.4747 24.2133 9.472 23.232C8.49067 22.2507 8 21.0453 8 19.616C8 18.9333 8.096 18.208 8.288 17.44C8.48 16.672 8.864 15.68 9.44 14.464L14.4 4H19.2L16.544 15.584C17.1413 16.0107 17.6213 16.576 17.984 17.28C18.368 17.9627 18.56 18.7413 18.56 19.616ZM32.8 19.616C32.8 21.0453 32.2773 22.2507 31.232 23.232C30.1867 24.2133 28.9387 24.704 27.488 24.704C26.016 24.704 24.768 24.2133 23.744 23.232C22.7413 22.2507 22.24 21.0453 22.24 19.616C22.24 18.9333 22.336 18.208 22.528 17.44C22.72 16.672 23.1147 15.68 23.712 14.464L28.704 4H33.472L30.784 15.584C31.4027 16.0107 31.8933 16.576 32.256 17.28C32.6187 17.9627 32.8 18.7413 32.8 19.616Z"
+                            fill="#ABB2BF" />
+                    </svg>
                 </div>
             </div>
-            <!-- Image Section (hidden on md and sm, visible on lg and larger) -->
-            <div class="w-full lg:w-[50%] hidden lg:flex">
-                <div class="w-[80%] ms-auto">
-                    <img class="rounded-full h-[100%]"
-                        src="rajesh.png" alt="">
-                </div>
+            <div class="flex justify-end">
+                <p class="text-white text-lg max-w-max border border-[var(--gray)] p-2">
+                    <a href="https://rajankumarkhadka.com.np/" class="">Rajan kumar khadka</a>
+                </p>
             </div>
+            <div class="absolute hidden right-0 h-14 mt-3 w-16 border-y border-l border-[var(--gray)]"></div>
         </div>
     </section>
-
-    <!-- skills -->
-
-    <section id="skills" class="lg:pt-14 p opacity-75 pb-5 ">
-        <div class="max-w-7xl m-auto">
-            <div class=" text-center justify-center">
-                <h3 class="text-3xl font-extrabold   font-oswald leading-loose">Skills</h3>
-                <p class="text-xl">Here are some of my skills on which I have been working on for
-                    the past 1 years. </p>
-            </div>
-            <div class="w-[100%] mt-10 gap-4 block md:flex lg:flex ">
-                <div class="w-[100%] md:w-[49%]  ">
-                    <div class="border-2 border-[#aea8a8] h-[100%] py-5 rounded-3xl px-10 ">
-                        <h3 class=" font-bold  text-3xl md:pb-3 ">Frontend</h3>
-                        <div class=" flex flex-wrap text-center gap-4 ">
-                            <p
-                                class="border-2 flex transition duration-300  gap-2   items-center   font-semibold text-xl rounded-2xl px-8 py-4">
-                                <i class="fab fa-html5"></i> HTML
-                            </p>
-                            <p
-                                class="border-2 gap-2  items-center  transition duration-300 flex  font-semibold  text-xl rounded-2xl px-8 py-4">
-                                <i class="fab fa-css3-alt"></i>CSS
-                            </p>
-                            <p
-                                class="border-2 gap-2   items-center flex transition duration-300   font-semibold  text-xl rounded-2xl px-8 py-4">
-                                <i class="fab fa-tailwindcss"></i>Tailwind CSS
-                            </p>
-                            <p
-                                class="border-2 gap-2  items-center flex transition duration-300  font-semibold  text-xl rounded-2xl px-8 py-4">
-                                <i class="fab fa-js-square"></i>JAVASCRIPT
-                            </p>
-                            <p
-                                class="border-2  gap-2  items-center  flex transition duration-300    font-semibold text-xl rounded-2xl px-8 py-4">
-                                <i class="fab fa-react"></i>REACT
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="w-[100%] md:w-[49%] mt-8  md:mt-0 mr-auto  ">
-                    <div class="border-2 border-[#aea8a8] h-[100%] py-5 rounded-3xl px-10">
-                        <h5 class=" font-bold  text-3xl md:pb-3 ">Backend</h5>
-                        <div class=" flex flex-wrap text-center gap-4 ">
-                            <h6
-                                class="border-2 flex  gap-2  items-center transition duration-300 font-semibold text-xl rounded-2xl px-8 py-4">
-                                <i class="fab fa-html5"></i> Django
-                            </h6>
-                            <h6
-                                class="border-2 gap-2  items-center flex  font-semibold transition duration-300  text-xl rounded-2xl px-8 py-4">
-                                <i class="fab fa-css3-alt"></i>Wordpress
-                            </h6>
-                            <h6
-                                class="border-2 gap-2 items-center flex  font-semibold transition duration-300  text-xl rounded-2xl px-8 py-4">
-                                <i class="fab fa-tailwindcss"></i> MYSQL
-                            </h6>
-
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="mt-4 w-[100%] text-center  justify-start items-center border-2 border-[#aea8a8] rounded-3xl">
-                <div class="py-5 px-3   md:justify-center w-[90%] m-auto items-center ">
-                    <h5 class=" font-bold  text-3xl md:pb-3 items-center mb-2">Tools</h5>
-                    <div class=" items-center justify-center  md:flex flex flex-wrap gap-4 lg:flex">
-
-                        <h6
-                            class="border-2   transition duration-300  items-center   font-semibold  text-xl rounded-2xl px-8 py-4">
-                            <i class="fab fa-css3-alt"></i>Git
-                        </h6>
-                        <h6
-                            class="border-2  transition duration-300  items-center   font-semibold  text-xl rounded-2xl px-8 py-4">
-                            <i class="fab fa-css3-alt"></i>Github
-                        </h6>
-                        <h6
-                            class="border-2  transition duration-300  items-center  font-semibold  text-xl rounded-2xl px-8 py-4">
-                            <i class="fab fa-css3-alt"></i>PyCharm
-                        </h6>
-                        <h6
-                            class="border-2  transition duration-300  items-center  font-semibold  text-xl rounded-2xl px-8 py-4">
-                            <i class="fab fa-css3-alt"></i>Vs Code
-                        </h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <!-- Education -->
-
-    <Section id="education" class=" pt-14 opacity-70">
-        <div class="max-w-7xl m-auto ">
-            <div class="justify-center text-center items-center">
-                <h4 class="font-poppins opacity-90 mt-10 text-4xl  font-bold leading-relaxed">Education</h4>
-                <p class=" opacity-80 text-xl">My education has been a journey of self-discovery and growth.My
-                    educational details are as follows.</p>
-            </div>
-
-            <div class="lg:flex lg:flex-wrap w-full lg:gap-4  ">
-                <div class="lg:flex lg:flex-wrap  lg:w-[48%] w-full mt-8 ">
-                    <div class=" w-full  border-[#aea8a8] border-2 rounded-2xl py-4">
-                        <div class="px-4  ">
-                            <div class="w-20 h-20 m-auto justify-center mb-4">
-                                <img src="NepalayaLogo.c2c198be566715ac834e.png" alt="">
-                            </div>
-                            <a class="font-poppins text-xl " href="https://nepalaya.edu.np/">Nepalaya
-                                College - Kalanki, Kathamdnu <button
-                                    class="bg-yellow-100  text-red-800 rounded  px-2 text-sm opacity-100">Running</button></a>
-                            <p class=" mt-4 text-md font-signika leading-snug ">Bachelor of Science in
-                                Computer Science and Information Technology
-                            </p>
-                            <p class=" text-sm font-normal font-signika  mt-3 ">I am currently pursuing a
-                                B.Sc. in Computer Science and Information Technology (B.Sc.
-                                CSIT)
-                                degree, which I am on track to complete in 2025 from Nepalaya College, located in
-                                Kalanki,
-                                Kathmandu, Nepal. I have taken courses in Data Structures, Algorithms,
-                                Object-Oriented
-                                Programming, Database Management Systems, Operating Systems, and Computer Networks,
-                                among
-                                others.</p>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="lg:flex lg:flex-wrap lg:gap-8 w-full lg:w-[48%]  mt-8 ">
-                    <div class=" w-full border-2  border-[#aea8a8] rounded-2xl px-5 ">
-                        <h3 class="text-3xl  font-bold mt-4">School </h3>
-                        <div class="my-3">
-                            <a class="font-poppins text-md   " href="https://www.facebook.com/padmodaya.dang">Padmodaya
-                                Public Model Secondary
-                                School,Dang </a>
-                            <p class="mt-4 text-md font-signika leading-snug  ">National Examination Board
-                            </p>
-                            <p class=" text-sm font-normal font-signika opacity-90 mt-3 "> I completed my class 12
-                                high school education at Padmodaya public model secondary school,Dang , where I
-                                studied Science.
-                            </p>
-                            </p>
-                        </div>
-                        <div class="">
-                            <a class="font-poppins text-md " href="#">Chandra Jyoti Secondary
-                                School </a>
-                            <p class="mt-4 text-md font-signika leading-snug   ">School Leaving Certificate
-                            </p>
-                            <p class=" text-sm font-normal font-signika opacity-90 mt-3 pb-5  "> I completed my class 10
-                                education at Chandra Jyoti Secondary School,Dang.
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </Section>
 
     <!-- project -->
-
-    <section id="project" class="opacity-75 pt-14 max-w-7xl mx-auto">
-
-        <div class=" text-center justify-center my-10">
-            <h3 class="text-4xl font-extrabold  opacity-65 font-oswald leading-loose">Projects</h3>
-            <p class=" text-xl opacity-75">I want to worked on a wide range of projects. From web development to
-                android apps. Here are some of my projects.
-I want to w
-            </p>
-        </div>
-
-        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:justify-center items-start justify-start gap-3">
-
-
-            <div class=" border-2 rounded-3xl border-[#aea8a8]">
-                <img class="h-[300px] rounded-t-3xl w-full object-cover" src="task_management_system.png" alt="">
-
-                <div class="pt-10 px-4">
-                    <a class="font-poppins text-lg opacity-90 " href="#">Task_management_system </a>
-                    <p class="mt-4 text-sm font-signika leading-snug opacity-90 line-clamp-2  ">In this Task Management system we are able to add task , complete date , etc i has also calender system  which has once clander dynamically schedule the work, leave day etc. And aother functionality like add member, assing task etc also done from this system .
-                    </p>
+    <section class="mt-[74px] relative">
+        <div class="max-w-[1024px] mx-auto px-4 sm:px-0">
+            <div class="flex gap-10 text-center justify-between items-center">
+                <div class="flex items-center">
+                    <h2 class="text-[32px] font-medium text-white">
+                        <span class="text-primary">#</span>projects
+                    </h2>
+                    <span class="h-[1px] w-[50px] lg:w-[400px] bg-[var(--primary)] inline-block"></span>
                 </div>
-                <div
-                    class=" bg-gray-100 text-black  font-semibold  text-xl rounded-2xl mx-4 py-2 justify-center text-center my-4">
-                    <a class="   " href="https://task-management-system-rdmf.vercel.app/"> View Project</a>
+                <div class="inline-flex gap-2">
+                    <a href="#"> View all ~~></a>
                 </div>
             </div>
-
-
-            <div class="border-2 rounded-3xl border-[#]">
-                <img class="h-[300px] rounded-t-3xl w-full object-cover" src="legal_avenues.png" alt="">
-
-                <div class="pt-10 px-4">
-                    <a class="font-poppins text-lg opacity-90 " href="#">Legal Avenues </a>
-                    <p class="mt-4 text-sm font-signika leading-snug opacity-90 line-clamp-4  ">In this  Legal Avenues  system we are able to add teams , publication services all are dynamically
-                    </p>
-                </div>
+            <div class="mt-[32px] grid grid-cols-1 lg:grid-cols-3 gap-6">
                 <div
-                    class=" bg-gray-100 text-black  font-semibold  text-xl rounded-2xl mx-4 py-2 justify-center text-center my-4">
-                    <a class="   " href="https://legalavenues.com.np/"> View Project</a>
-                </div>
-            </div>
-            <div class="border-2 rounded-3xl border-[#aea8a8]">
-                <img class="h-[300px] rounded-t-3xl w-full object-cover" src="image.png" alt="">
-
-                <div class="pt-10 px-4">
-                    <a class="font-poppins text-lg opacity-90 " href="https://pegagus.vercel.app/">Pegagus education </a>
-                    <p class="mt-4 text-sm font-signika leading-snug opacity-90 line-clamp-4  ">In this Pegagus education  system we are able to add teams , publication services all are dynamically
-                    </p>
-                </div>
-                <div
-                    class=" bg-gray-100 text-black  font-semibold  text-xl rounded-2xl mx-4 py-2 justify-center text-center my-4">
-                    <a class="   " target="_blank" href="https://pegagus.vercel.app/"> View Project</a>
-                </div>
-            </div>
-            <div class="border-2 rounded-3xl border-[#aea8a8]">
-                <img class="h-[300px] rounded-t-3xl w-full object-cover" src="altripmart.png" alt="">
-
-                <div class="pt-10 px-4">
-                    <a class="font-poppins text-lg opacity-90 " href="https://altripmart-two.vercel.app/">Altripmart  </a>
-                    <p class="mt-4 text-sm font-signika leading-snug opacity-90 line-clamp-4  ">In this Altripmart   system we are able to add roots , trek services all are dynamically
-                    </p>
-                </div>
-                <div
-                    class=" bg-gray-100 text-black  font-semibold  text-xl rounded-2xl mx-4 py-2 justify-center text-center my-4">
-                    <a class="   " target="_blank" href="https://altripmart-two.vercel.app/"> View Project</a>
-                </div>
-            </div>
-<!-- 
-            <div class="border-2 rounded-3xl border-[#aea8a8]">
-                <img class="h-[300px] rounded-t-3xl w-full object-cover" src="porfile.jpeg" alt="">
-
-                <div class="pt-10 px-4">
-                    <a class="font-poppins text-lg opacity-60 " href="#">Project Name </a>
-                    <p class="mt-4 text-sm font-signika leading-snug opacity-60 line-clamp-4 ">Lorem ipsum, dolor sit
-                        amet conse
-                        delectus veritatis aperiam? Voluptates nihil sunt quam totam delectus libero, doloribus tempora
-                        dolores reprehenderit, fugit quaerat maxime quae quod recusandae qui officiis consequchool
-                        Leaving Certificateuntur quisquam repellendus numquam error architecto. Quam, est.
-                    </p>
-                </div>
-                <div
-                    class=" bg-gray-100 text-black  font-semibold  text-xl rounded-2xl mx-4 py-2 justify-center text-center my-4">
-                    <a class="   " href="#"> View Project</a>
-                </div>
-            </div>
-
-
-            <div class="border-2 rounded-3xl border-[#aea8a8]">
-                <img class="h-[300px] rounded-t-3xl w-full object-cover" src="porfile.jpeg" alt="">
-
-                <div class="pt-10 px-4">
-                    <a class="font-poppins text-lg  opacity-60 " href="#">Project Name </a>
-                    <p class="mt-4 text-sm font-signika leading-snug opacity-60  line-clamp-4 ">Lorem ipsum, dolor sit
-                        amet conse
-                        delectus veritatis aperiam? Voluptates nihil sunt quam totam delectus libero, doloribus tempora
-                        dolores reprehenderit, fugit quaerat maxime quae quod recusandae qui officiis consequchool
-                        Leaving Certificateuntur quisquam repellendus numquam error architecto. Quam, est. Lorem ipsum
-                        dolor sit amet, consectetur adipisicing elit. Sapiente quasi, dolore mollitia similique optio
-                        alias quas harum consectetur. Nisi voluptas soluta possimus quos aut autem voluptatum quibusdam
-                        harum laudantium ab!
-                    </p>
-                </div>
-                <div
-                    class=" bg-gray-100 text-black  font-semibold  text-xl rounded-2xl mx-4 py-2 justify-center text-center my-4">
-                    <a class="  " href="#"> View Project</a>
-                </div>
-            </div> -->
-        </div>
-    </section>
-
-
-    <!-- experience -->
-
-
-    <section id="Experience" class="opacity-75 pt-14">
-        <div class="max-w-7xl mx-auto mt-20  ">
-            <h3 class="text-4xl font-extrabold   text-center opacity-65  font-oswald leading-loose">Experience</h3>
-            <p class=" opacity-70 text-xl">My work experience as a Frontend Developer and working on Backend on my own
-                projects.Learning as Full Stack Developer</p>
-        </div>
-
-
-        <div class="max-w-7xl mx-auto mt-8 m-auto  ">
-            <div class="flex">
-                <i class="fa-regular fa-note-sticky"></i>
-                <div class="pl-3 border-l  border-opacity-60 ml-1.5 ">
-                    <h4>Full Stack Developer <span class="bg-gray-300 text-black p-1 rounded-3xl px-3"> Till Now</span>
-                    </h4>
-                    <p>Upwork Pvt Ltd</p>
-                    <p>I'm a freelancer with a background as a full-stack developer. I bring versatile skills and a
-                        strong commitment to delivering top-quality solutions.
-                    </p>
-                </div>
-            </div>
-
-
-        </div>
-
-
-
-
-
-
-    </section>
-
-
-    <!-- Contact -->
-
-    <section id="contact" class=" lg:mt-40 opacity-75  md:mb-10 mb-8 ">
-
-        <div class="max-w-7xl mx-auto ">
-            <h3 class="text-3xl font-bold leading-relaxed opacity-75">
-                Need Help?
-            </h3>
-            <p class="  font-poppins  text-xl font-medium leading-relaxed opacity-75">Feel free to reach out to me for
-                any questions or opportunities or mail me directly on</p>
-            <span class="underline font-poppins text-white text-lg font-bold"
-                href="mailto:rajeshkhadka22e@gmail.com">rajeshkhadka22e@gmail.com</span>
-
-            <form action="https://api.web3forms.com/submit" method="POST">
-
-                <div class="flex gap-6 w-full mt-10">
-                    <div class="w-1/2">
-                        <h4 class="text-xl font-medium mb-4 opacity-75">Your Name</h4>
-                        <input class="p-5 bg-gray-800 w-full text-xl font-medium rounded-xl" name="name" id="name"
-                            for="text" placeholder="Enter Your name"></input>
-                    </div>
-                    <div class="w-1/2">
-                        <h4 class="text-xl font-medium mb-4 opacity-75 opacity-600">Your Email</h4>
-                        <input class="p-5 bg-gray-800 w-full text-xl font-medium rounded-xl" name="email" id="email"
-                            for="Email" placeholder="Enter Your Email"></input>
+                    class="flex flex-col border border-[var(--gray)] hover:border-[var(--primary)]  transition-all duration-300 cursor-pointer">
+                    <img src="image/Rectangle 22.png" class="h-[150px] object-cover" alt="project 1" />
+                    <h3 class="text-[var(--gray)] capitalize text-sm p-4 font-medium border-y line-clamp-2">
+                        html css javascript
+                    </h3>
+                    <div class="space-y-3 p-4">
+                        <h4 class="text-xl font-medium text-white">project name</h4>
+                        <p class="text-sm text-[var(--gray)]">
+                            Minecraft servers hosting
+                        </p>
+                        <div class="flex gap-4">
+                            <a href="#"
+                                class="p-1 border border-[var(--primary)] hover:border-[var(--gray)] transition-all duration-300 cursor-pointer">Live
+                                <~>
+                            </a>
+                            <a href="#"
+                                class="p-1 border border-[var(--gray)] hover:border-[var(--primary)] transition-all duration-300 cursor-pointer">Cached
+                                >=</a>
+                        </div>
                     </div>
                 </div>
-                <h4 class="text-xl font-medium mt-8 mb-4 opacity-75">Your Messages</h4>
-                <textarea class="p-5 bg-gray-800 w-full text-xl font-medium rounded-xl h-80" id="message" name="message"
-                    placeholder="Enter Your Message"></textarea>
-
-                <button type="submit" onclick="sendMaill()"
-                    class="bg-blue-500 p-5 text-center rounded-xl text-xl w-full font-bold mt-8">Send</button>
+                <div
+                    class="flex flex-col border border-[var(--gray)] hover:border-[var(--primary)] transition-all duration-300 cursor-pointer">
+                    <img src="image/Rectangle 22.png" class="h-[150px] object-cover" alt="project 1" />
+                    <h3 class="text-[var(--gray)] capitalize text-sm p-4 font-medium border-y line-clamp-2">
+                        html css javascript
+                    </h3>
+                    <div class="space-y-3 p-4">
+                        <h4 class="text-xl font-medium text-white">project name</h4>
+                        <p class="text-sm text-[var(--gray)]">
+                            Minecraft servers hosting
+                        </p>
+                        <div class="flex gap-4">
+                            <a href="#"
+                                class="p-1 border border-[var(--primary)] hover:border-[var(--gray)] transition-all duration-300 cursor-pointer">Live
+                                <~>
+                            </a>
+                            <a href="#"
+                                class="p-1 border border-[var(--gray)] hover:border-[var(--primary)] transition-all duration-300 cursor-pointer">Cached
+                                >=</a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col border border-[var(--gray)] hover:border-[var(--primary)] transition-all duration-300 cursor-pointer">
+                    <img src="image/Rectangle 22.png" class="h-[150px] object-cover" alt="project 1" />
+                    <h3 class="text-[var(--gray)] capitalize text-sm p-4 font-medium border-y line-clamp-2">
+                        html css javascript
+                    </h3>
+                    <div class="space-y-3 p-4">
+                        <h4 class="text-xl font-medium text-white">project name</h4>
+                        <p class="text-sm text-[var(--gray)]">
+                            Minecraft servers hosting
+                        </p>
+                        <div class="flex gap-4">
+                            <a href="#"
+                                class="p-1 border border-[var(--primary)] hover:border-[var(--gray)] transition-all duration-300 cursor-pointer">Live
+                                <~>
+                            </a>
+                            <a href="#"
+                                class="p-1 border border-[var(--gray)] hover:border-[var(--primary)] transition-all duration-300 cursor-pointer">Cached
+                                >=</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        </form>
+        <div class="absolute hidden md:flex top-30 -left-8 justify-left">
+            <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="2" cy="2" r="2" fill="#fafafa" />
+                <circle cx="22" cy="2" r="2" fill="#fafafa" />
+                <circle cx="42" cy="2" r="2" fill="#fafafa" />
+                <circle cx="62" cy="2" r="2" fill="#fafafa" />
+                <circle cx="82" cy="2" r="2" fill="#fafafa" />
+                <circle cx="2" cy="22" r="2" fill="#fafafa" />
+                <circle cx="22" cy="22" r="2" fill="#fafafa" />
+                <circle cx="42" cy="22" r="2" fill="#fafafa" />
+                <circle cx="62" cy="22" r="2" fill="#fafafa" />
+                <circle cx="82" cy="22" r="2" fill="#fafafa" />
+                <circle cx="2" cy="42" r="2" fill="#fafafa" />
+                <circle cx="22" cy="42" r="2" fill="#fafafa" />
+                <circle cx="42" cy="42" r="2" fill="#fafafa" />
+                <circle cx="62" cy="42" r="2" fill="#fafafa" />
+                <circle cx="82" cy="42" r="2" fill="#fafafa" />
+                <circle cx="2" cy="62" r="2" fill="#fafafa" />
+                <circle cx="22" cy="62" r="2" fill="#fafafa" />
+                <circle cx="42" cy="62" r="2" fill="#fafafa" />
+                <circle cx="62" cy="62" r="2" fill="#fafafa" />
+                <circle cx="82" cy="62" r="2" fill="#fafafa" />
+                <circle cx="2" cy="82" r="2" fill="#fafafa" />
+                <circle cx="22" cy="82" r="2" fill="#fafafa" />
+                <circle cx="42" cy="82" r="2" fill="#fafafa" />
+                <circle cx="62" cy="82" r="2" fill="#fafafa" />
+                <circle cx="82" cy="82" r="2" fill="#fafafa" />
+            </svg>
+        </div>
+        <div class="absolute hidden md:flex bottom-10 right-0 h-30 mt-3 w-16 border-y border-l border-[var(--gray)]"></div>
     </section>
 
 
-    <!-- footer -->
-    <section id=" footer" class="opacity-75 w-[85%] mx-auto">
-        <div class="m-auto flex flex-col lg-flex  justify-between items-center pb-8 border-b-2 border-white">
-            <div class="flex lg:justify-start justify-center gap-4 mb-4  md:gap-6">
-                <!-- Facebook Icon -->
-                <a href="https://www.facebook.com/rajankumarkhadkaa" target="_blank"    rel="noopener noreferrer"
-   aria-label="Visit my Facebook profile">
-
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-
-                <!-- Instagram Icon -->
-                <a href="https://www.instagram.com/rajankumarkhadkaa/" target="_blank"   rel="noopener noreferrer"
-   aria-label="Visit my instagram profile">
-
-                    <i class="fab fa-instagram"></i>
-                </a>
-
-                <!-- LinkedIn Icon -->
-                <a href="https://www.linkedin.com/in/rajankumarkhadka/" target="_blank"   rel="noopener noreferrer"
-   aria-label="Visit my linkedin-in profile">
-
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-
-                <a href="mailto:rajeshkhadka22e@gmail.com"    rel="noopener noreferrer"
-   aria-label="Visit my email profile">
-                    <i class="fas fa-envelope text-xl text-gray-600 hover:text-red-600"></i>
-                </a>
+    <!-- skills -->
+    <section class="mt-[74px] relative max-w-[1024px] mx-auto px-4 sm:px-0">
+        <div class="flex gap-10 text-center justify-between items-center">
+            <div class="flex items-center">
+                <h2 class="text-[32px] font-medium text-white">
+                    <span class="text-primary">#</span>skills
+                </h2>
+                <span class="h-[1px] w-[100px] lg:w-[200px] bg-[var(--primary)] inline-block"></span>
             </div>
-            <div class="gap-2 md:gap-4 items-center flex ">
-                <!-- Navigation Links -->
-                <a href="#hero" class="text-purple-500 text-sm font-medium">Home</a>
-                <a href="#skills" class="text-sm font-medium">Skills</a>
-                <a href="#education" class="text-sm font-medium">Education</a>
-                <a href="#project" class="text-sm font-medium">Project</a>
-                <a href="#Experience" class="text-sm font-medium">Experience</a>
-                <a href="#contact" class="text-sm font-medium">Contact</a>
-            </div>
-
         </div>
-        <div>
-            <h4 class="text-center items-center text-sm my-5">© 2023 Rajan Kumar Khadka. All Rights Reserved.</h4>
+        <div class="grid grid-cols-1 lg:grid-cols-[349px_584px] gap-[59px]">
+            <div class="">
+                <svg width="349" height="283" viewBox="0 0 349 283" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="2" cy="40" r="2" fill="#ABB2BF" />
+                    <circle cx="16.75" cy="40" r="2" fill="#ABB2BF" />
+                    <circle cx="31.5" cy="40" r="2" fill="#ABB2BF" />
+                    <circle cx="46.25" cy="40" r="2" fill="#ABB2BF" />
+                    <circle cx="61" cy="40" r="2" fill="#ABB2BF" />
+                    <circle cx="2" cy="54.75" r="2" fill="#ABB2BF" />
+                    <circle cx="16.75" cy="54.75" r="2" fill="#ABB2BF" />
+                    <circle cx="31.5" cy="54.75" r="2" fill="#ABB2BF" />
+                    <circle cx="46.25" cy="54.75" r="2" fill="#ABB2BF" />
+                    <circle cx="61" cy="54.75" r="2" fill="#ABB2BF" />
+                    <circle cx="2" cy="69.5" r="2" fill="#ABB2BF" />
+                    <circle cx="16.75" cy="69.5" r="2" fill="#ABB2BF" />
+                    <circle cx="31.5" cy="69.5" r="2" fill="#ABB2BF" />
+                    <circle cx="46.25" cy="69.5" r="2" fill="#ABB2BF" />
+                    <circle cx="61" cy="69.5" r="2" fill="#ABB2BF" />
+                    <circle cx="2" cy="84.25" r="2" fill="#ABB2BF" />
+                    <circle cx="16.75" cy="84.25" r="2" fill="#ABB2BF" />
+                    <circle cx="31.5" cy="84.25" r="2" fill="#ABB2BF" />
+                    <circle cx="46.25" cy="84.25" r="2" fill="#ABB2BF" />
+                    <circle cx="61" cy="84.25" r="2" fill="#ABB2BF" />
+                    <circle cx="2" cy="99" r="2" fill="#ABB2BF" />
+                    <circle cx="16.75" cy="99" r="2" fill="#ABB2BF" />
+                    <circle cx="31.5" cy="99" r="2" fill="#ABB2BF" />
+                    <circle cx="46.25" cy="99" r="2" fill="#ABB2BF" />
+                    <circle cx="61" cy="99" r="2" fill="#ABB2BF" />
+                    <circle cx="179" cy="145" r="2" fill="#ABB2BF" />
+                    <circle cx="193.75" cy="145" r="2" fill="#ABB2BF" />
+                    <circle cx="208.5" cy="145" r="2" fill="#ABB2BF" />
+                    <circle cx="223.25" cy="145" r="2" fill="#ABB2BF" />
+                    <circle cx="238" cy="145" r="2" fill="#ABB2BF" />
+                    <circle cx="179" cy="159.75" r="2" fill="#ABB2BF" />
+                    <circle cx="193.75" cy="159.75" r="2" fill="#ABB2BF" />
+                    <circle cx="208.5" cy="159.75" r="2" fill="#ABB2BF" />
+                    <circle cx="223.25" cy="159.75" r="2" fill="#ABB2BF" />
+                    <circle cx="238" cy="159.75" r="2" fill="#ABB2BF" />
+                    <circle cx="179" cy="174.5" r="2" fill="#ABB2BF" />
+                    <circle cx="193.75" cy="174.5" r="2" fill="#ABB2BF" />
+                    <circle cx="208.5" cy="174.5" r="2" fill="#ABB2BF" />
+                    <circle cx="223.25" cy="174.5" r="2" fill="#ABB2BF" />
+                    <circle cx="238" cy="174.5" r="2" fill="#ABB2BF" />
+                    <circle cx="179" cy="189.25" r="2" fill="#ABB2BF" />
+                    <circle cx="193.75" cy="189.25" r="2" fill="#ABB2BF" />
+                    <circle cx="208.5" cy="189.25" r="2" fill="#ABB2BF" />
+                    <circle cx="223.25" cy="189.25" r="2" fill="#ABB2BF" />
+                    <circle cx="238" cy="189.25" r="2" fill="#ABB2BF" />
+                    <circle cx="179" cy="204" r="2" fill="#ABB2BF" />
+                    <circle cx="193.75" cy="204" r="2" fill="#ABB2BF" />
+                    <circle cx="208.5" cy="204" r="2" fill="#ABB2BF" />
+                    <circle cx="223.25" cy="204" r="2" fill="#ABB2BF" />
+                    <circle cx="238" cy="204" r="2" fill="#ABB2BF" />
+                    <rect x="297.5" y="193.5" width="51" height="51" stroke="#ABB2BF" />
+                    <rect x="227.5" y="0.5" width="85" height="85" stroke="#ABB2BF" />
+                    <mask id="path-53-inside-1_29_371" fill="white">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M71.5 169H99.75H128V197.25V225.5V253.75H99.75H71.5V225.5H99.75V197.25H71.5V169Z" />
+                    </mask>
+                    <path
+                        d="M71.5 169V168H70.5V169H71.5ZM128 169H129V168H128V169ZM128 253.75V254.75H129V253.75H128ZM71.5 253.75H70.5V254.75H71.5V253.75ZM71.5 225.5V224.5H70.5V225.5H71.5ZM99.75 225.5V226.5H100.75V225.5H99.75ZM99.75 197.25H100.75V196.25H99.75V197.25ZM71.5 197.25H70.5V198.25H71.5V197.25ZM99.75 168H71.5V170H99.75V168ZM128 168H99.75V170H128V168ZM129 197.25V169H127V197.25H129ZM129 225.5V197.25H127V225.5H129ZM129 253.75V225.5H127V253.75H129ZM99.75 254.75H128V252.75H99.75V254.75ZM99.75 252.75H71.5V254.75H99.75V252.75ZM72.5 253.75V225.5H70.5V253.75H72.5ZM71.5 226.5H99.75V224.5H71.5V226.5ZM98.75 197.25V225.5H100.75V197.25H98.75ZM71.5 198.25H99.75V196.25H71.5V198.25ZM70.5 169V197.25H72.5V169H70.5Z"
+                        fill="#C778DD" mask="url(#path-53-inside-1_29_371)" />
+                    <mask id="path-55-outside-2_29_371" maskUnits="userSpaceOnUse" x="14" y="196.25" width="59"
+                        height="87" fill="black">
+                        <rect fill="white" x="14" y="196.25" width="59" height="87" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15 197.25H43.25H71.5V225.5H43.25V253.75H71.5V282H43.25H15V253.75V225.5V197.25Z" />
+                    </mask>
+                    <path
+                        d="M15 197.25V196.25H14V197.25H15ZM71.5 197.25H72.5V196.25H71.5V197.25ZM71.5 225.5V226.5H72.5V225.5H71.5ZM43.25 225.5V224.5H42.25V225.5H43.25ZM43.25 253.75H42.25V254.75H43.25V253.75ZM71.5 253.75H72.5V252.75H71.5V253.75ZM71.5 282V283H72.5V282H71.5ZM15 282H14V283H15V282ZM43.25 196.25H15V198.25H43.25V196.25ZM71.5 196.25H43.25V198.25H71.5V196.25ZM72.5 225.5V197.25H70.5V225.5H72.5ZM43.25 226.5H71.5V224.5H43.25V226.5ZM44.25 253.75V225.5H42.25V253.75H44.25ZM43.25 254.75H71.5V252.75H43.25V254.75ZM70.5 253.75V282H72.5V253.75H70.5ZM71.5 281H43.25V283H71.5V281ZM15 283H43.25V281H15V283ZM14 253.75V282H16V253.75H14ZM14 225.5V253.75H16V225.5H14ZM14 197.25V225.5H16V197.25H14Z"
+                        fill="#C778DD" mask="url(#path-55-outside-2_29_371)" />
+                </svg>
+
+            </div>
+            <div class="mt-10 grid grid-cols-2 lg:grid-cols-3 gap-4 [direction:rtl]">
+
+                <div class="border border-[var(--gray)] text-[var(--gray)] max-h-max [direction:ltr]">
+                    <h2 class="text-white font-medium p-1">language</h2>
+                    <div class="border-t border-t-[var(--gray)]">
+                        <p class="text-gray p-1 text-sm">HTML, CSS, JavaScript, TypeScript, Python, C/C++</p>
+                    </div>
+                </div>
+
+                <div class="border border-[var(--gray)] text-[var(--gray)] max-h-max [direction:ltr]">
+                    <h2 class="text-white font-medium p-1">language</h2>
+                    <div class="border-t border-t-[var(--gray)]">
+                        <p class="text-gray p-1 text-sm">HTML, CSS, JavaScript, TypeScript, Python, C/C++</p>
+                    </div>
+                </div>
+                <div class="border border-[var(--gray)] text-[var(--gray)] max-h-max [direction:ltr]">
+                    <h2 class="text-white font-medium p-1">language</h2>
+                    <div class="border-t border-t-[var(--gray)]">
+                        <p class="text-gray p-1 text-sm">HTML, CSS, JavaScript, TypeScript, Python, C/C++</p>
+                    </div>
+                </div>
+                <div class="border border-[var(--gray)] text-[var(--gray)] max-h-max [direction:ltr]">
+                    <h2 class="text-white font-medium p-1">language</h2>
+                    <div class="border-t border-t-[var(--gray)]">
+                        <p class="text-gray p-1 text-sm">HTML, CSS, JavaScript, TypeScript, Python, C/C++</p>
+                    </div>
+                </div>
+                <div class="border border-[var(--gray)] text-[var(--gray)] max-h-max [direction:ltr]">
+                    <h2 class="text-white font-medium p-1">language</h2>
+                    <div class="border-t border-t-[var(--gray)]">
+                        <p class="text-gray p-1 text-sm">HTML, CSS, JavaScript, TypeScript, Python, C/C++</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/67cf24c7e724a1190b871107/1im0ifbtp';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    <!--End of Tawk.to Script-->
 
+
+    <!-- about me -->
+
+    <section class="mt-[74px] relative">
+        <div class="relative max-w-[1024px] mx-auto px-4 sm:px-0">
+
+            <div class="grid grid-cols-1 gap-[166px] sm:grid-cols-2 lg:grid-cols-[515px_343px]">
+                <div class="flex flex-col gap-[23px]">
+                    <div class="flex gap-10 text-center justify-between items-center">
+                        <div class="flex items-center">
+                            <h2 class="text-[32px] font-medium text-white">
+                                <span class="text-primary">#</span>about-me
+                            </h2>
+                            <span class="h-[1px] w-[100px] lg:w-[200px] bg-[var(--primary)] inline-block"></span>
+                        </div>
+                    </div>
+                    <p class="text-base text-[var(--gray)] leading-[26px]">
+                        Hello, i’m Elias!
+                        <br>
+                        <br>
+                        I’m a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive websites
+                        from scratch and raise them into modern user-friendly web experiences.
+                        <br><br>
+                        Transforming my creativity and knowledge into a websites has been my passion for over a year. I
+                        have been helping various clients to establish their presence online. I always strive to learn
+                        about the newest technologies and frameworks.
+                    </p>
+
+                    <div class="">
+                        <a class="border border-[var(--primary)] px-2 py-1 max-w-max hover:border-[var(--gray)] transition-all duration-300 cursor-pointer"
+                            href="#">Read more -></a>
+                    </div>
+                </div>
+                <div class="max-h-[450px]">
+                    <img src="image/rajesh.png" class="lg:h-[450px]  object-cover"
+                        alt="profile image of rajan kumar khadka">
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-42 left-0 h-42 mt-3 w-16 border-y border-r border-[var(--gray)]"></div>
+        <div class="absolute bottom-42 right-0 h-42 mt-3 w-16 border-y border-l border-[var(--gray)]"></div>
+
+        <div class="absolute bottom-0 right-48 justify-left">
+            <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="2" cy="2" r="2" fill="#fafafa" />
+                <circle cx="22" cy="2" r="2" fill="#fafafa" />
+                <circle cx="42" cy="2" r="2" fill="#fafafa" />
+                <circle cx="62" cy="2" r="2" fill="#fafafa" />
+                <circle cx="82" cy="2" r="2" fill="#fafafa" />
+                <circle cx="2" cy="22" r="2" fill="#fafafa" />
+                <circle cx="22" cy="22" r="2" fill="#fafafa" />
+                <circle cx="42" cy="22" r="2" fill="#fafafa" />
+                <circle cx="62" cy="22" r="2" fill="#fafafa" />
+                <circle cx="82" cy="22" r="2" fill="#fafafa" />
+                <circle cx="2" cy="42" r="2" fill="#fafafa" />
+                <circle cx="22" cy="42" r="2" fill="#fafafa" />
+                <circle cx="42" cy="42" r="2" fill="#fafafa" />
+                <circle cx="62" cy="42" r="2" fill="#fafafa" />
+                <circle cx="82" cy="42" r="2" fill="#fafafa" />
+                <circle cx="2" cy="62" r="2" fill="#fafafa" />
+                <circle cx="22" cy="62" r="2" fill="#fafafa" />
+                <circle cx="42" cy="62" r="2" fill="#fafafa" />
+                <circle cx="62" cy="62" r="2" fill="#fafafa" />
+                <circle cx="82" cy="62" r="2" fill="#fafafa" />
+                <circle cx="2" cy="82" r="2" fill="#fafafa" />
+                <circle cx="22" cy="82" r="2" fill="#fafafa" />
+                <circle cx="42" cy="82" r="2" fill="#fafafa" />
+                <circle cx="62" cy="82" r="2" fill="#fafafa" />
+                <circle cx="82" cy="82" r="2" fill="#fafafa" />
+            </svg>
+        </div>
+        <div class="absolute top-20 right-130 justify-left">
+            <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="2" cy="2" r="2" fill="#fafafa" />
+                <circle cx="22" cy="2" r="2" fill="#fafafa" />
+                <circle cx="42" cy="2" r="2" fill="#fafafa" />
+                <circle cx="62" cy="2" r="2" fill="#fafafa" />
+                <circle cx="82" cy="2" r="2" fill="#fafafa" />
+                <circle cx="2" cy="22" r="2" fill="#fafafa" />
+                <circle cx="22" cy="22" r="2" fill="#fafafa" />
+                <circle cx="42" cy="22" r="2" fill="#fafafa" />
+                <circle cx="62" cy="22" r="2" fill="#fafafa" />
+                <circle cx="82" cy="22" r="2" fill="#fafafa" />
+                <circle cx="2" cy="42" r="2" fill="#fafafa" />
+                <circle cx="22" cy="42" r="2" fill="#fafafa" />
+                <circle cx="42" cy="42" r="2" fill="#fafafa" />
+                <circle cx="62" cy="42" r="2" fill="#fafafa" />
+                <circle cx="82" cy="42" r="2" fill="#fafafa" />
+                <circle cx="2" cy="62" r="2" fill="#fafafa" />
+                <circle cx="22" cy="62" r="2" fill="#fafafa" />
+                <circle cx="42" cy="62" r="2" fill="#fafafa" />
+                <circle cx="62" cy="62" r="2" fill="#fafafa" />
+                <circle cx="82" cy="62" r="2" fill="#fafafa" />
+                <circle cx="2" cy="82" r="2" fill="#fafafa" />
+                <circle cx="22" cy="82" r="2" fill="#fafafa" />
+                <circle cx="42" cy="82" r="2" fill="#fafafa" />
+                <circle cx="62" cy="82" r="2" fill="#fafafa" />
+                <circle cx="82" cy="82" r="2" fill="#fafafa" />
+            </svg>
+        </div>
+    </section>
+
+<!-- conatct -->
+    <section class="mt-[74px] px-4 sm:px-0">
+        <div class="max-w-[1024px] mx-auto ">
+            <div class="grid grid-cols-1 md:grid-cols-2  ">
+                <div class="">
+                    <div class="flex items-center">
+                        <h2 class="text-[32px] font-medium text-white">
+                            <span class="text-primary">#</span>contact
+                        </h2>
+                        <span class="h-[1px] w-[100px] lg:w-[200px] bg-[var(--primary)] inline-block"></span>
+                    </div>
+                    <p class="mt-4 text-gray">Feel free to reach out to me for any inquiries or opportunities.</p>
+                </div>
+                <div
+                    class="border border-[var(--gray)] p-2 flex flex-col gap-2 text-gray text-sm max-w-max self-end ml-auto md:mt-10 ">
+                    <p class="text-white">Message me here</p>
+                    <a class="flex gap-1 items-center" href="#"> <span><svg width="32" height="32" viewBox="0 0 32 32"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24.1641 7.65906C22.543 6.87826 20.8325 6.32099 19.0751 6.00114C19.0592 5.99832 19.0428 6.00076 19.0283 6.0081C19.0137 6.01544 19.0017 6.02733 18.9938 6.04214C18.7735 6.45211 18.5298 6.98835 18.3595 7.40816C16.4651 7.10643 14.5383 7.10643 12.6439 7.40816C12.4539 6.9405 12.239 6.48443 12.0002 6.04214C11.9922 6.02749 11.9801 6.01574 11.9656 6.00842C11.9511 6.0011 11.9348 5.99856 11.9189 6.00114C10.1611 6.31928 8.45021 6.87684 6.82991 7.65906C6.81605 7.66461 6.80445 7.67504 6.7971 7.68858C3.55651 12.7706 2.66745 17.7279 3.10339 22.623C3.10495 22.6459 3.11901 22.6689 3.1362 22.6836C5.02325 24.1507 7.13396 25.2708 9.37832 25.9962C9.39417 26.0014 9.4112 26.0013 9.42693 25.9957C9.44267 25.99 9.45629 25.9793 9.46582 25.965C9.94707 25.2763 10.3752 24.5498 10.7439 23.7856C10.7516 23.7699 10.7543 23.752 10.7514 23.7345C10.7486 23.7171 10.7405 23.7011 10.7283 23.6889C10.7202 23.6809 10.7107 23.6747 10.7002 23.6708C10.027 23.3993 9.37503 23.0731 8.7502 22.6951C8.73275 22.6847 8.71977 22.6677 8.71395 22.6476C8.70814 22.6274 8.70993 22.6057 8.71895 22.5869C8.72427 22.5747 8.73231 22.564 8.74239 22.5557C8.87364 22.4524 9.00489 22.3442 9.12989 22.236C9.14093 22.2266 9.15418 22.2206 9.16821 22.2186C9.18225 22.2166 9.19655 22.2186 9.20957 22.2245C13.3017 24.1858 17.7314 24.1858 21.7735 22.2245C21.787 22.2183 21.8018 22.2162 21.8164 22.2182C21.831 22.2202 21.8448 22.2264 21.8563 22.236C21.9813 22.3442 22.1126 22.4524 22.2438 22.5557C22.2544 22.5639 22.263 22.5747 22.2687 22.5872C22.2744 22.5996 22.277 22.6134 22.2764 22.6272C22.2758 22.641 22.2719 22.6544 22.2651 22.6663C22.2584 22.6781 22.2489 22.688 22.2376 22.6951C21.6142 23.0765 20.9614 23.4024 20.286 23.6692C20.2752 23.6733 20.2655 23.6798 20.2574 23.6883C20.2493 23.6968 20.243 23.7071 20.2391 23.7184C20.2355 23.7294 20.2341 23.741 20.2349 23.7525C20.2357 23.7641 20.2387 23.7754 20.2438 23.7856C20.6188 24.5482 21.0485 25.2763 21.5204 25.965C21.5299 25.9793 21.5435 25.99 21.5593 25.9957C21.575 26.0013 21.592 26.0014 21.6079 25.9962C23.856 25.2731 25.9701 24.1528 27.8594 22.6836C27.8688 22.6768 27.8767 22.6677 27.8824 22.6572C27.8881 22.6467 27.8914 22.635 27.8922 22.623C28.4141 16.9637 27.0188 12.0474 24.1954 7.69022C24.1925 7.68302 24.1883 7.67653 24.1829 7.67116C24.1775 7.66579 24.1711 7.66167 24.1641 7.65906ZM11.3549 19.6417C10.1221 19.6417 9.10801 18.4544 9.10801 16.9982C9.10801 15.5403 10.1033 14.353 11.3549 14.353C12.6158 14.353 13.6205 15.5502 13.6017 16.9982C13.6017 18.4544 12.6064 19.6417 11.3549 19.6417ZM19.661 19.6417C18.4298 19.6417 17.4142 18.4544 17.4142 16.9982C17.4142 15.5403 18.4095 14.353 19.661 14.353C20.922 14.353 21.9282 15.5502 21.9079 16.9982C21.9079 18.4544 20.922 19.6417 19.661 19.6417Z"
+                                    fill="#ABB2BF" />
+                            </svg>
+                        </span> !Elias#3519</a>
+                    <a href="#" class="flex gap-1 items-center"> <span><svg width="23" height="17" viewBox="0 0 23 17"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.071875 2.20292C0.216801 1.57709 0.573067 1.01832 1.08232 0.618104C1.59158 0.217889 2.22365 -4.32004e-05 2.875 6.42336e-09H20.125C20.7764 -4.32004e-05 21.4084 0.217889 21.9177 0.618104C22.4269 1.01832 22.7832 1.57709 22.9281 2.20292L11.5 9.0865L0.071875 2.20292ZM0 3.82075V13.8847L8.34181 8.84425L0 3.82075ZM9.71894 9.67583L0.274563 15.3807C0.507907 15.8657 0.876195 16.2753 1.33656 16.5619C1.79693 16.8486 2.33044 17.0005 2.875 17H20.125C20.6695 17.0001 21.2028 16.8479 21.6629 16.561C22.123 16.274 22.491 15.8643 22.724 15.3793L13.2796 9.67442L11.5 10.7468L9.71894 9.67442V9.67583ZM14.6582 8.84567L23 13.8847V3.82075L14.6582 8.84425V8.84567Z"
+                                    fill="#ABB2BF" />
+                            </svg>
+                        </span>
+                        elias@elias.me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer  -->
+<section class="mt-[74px] ">
+    <hr class="border-t border-t-[var(--gray)]" />
+    <div class="max-w-[1024px] mx-auto grid grid-cols-1 md:grid-cols-2 px-4 sm:px-0 mt-4 pb-8">
+    <div class="flex flex-col gap-1">
+        <p class="mt-4 text-gray">© 2024 Elias. All rights reserved.</p>
+    <p class="text-gray">Web designer and front-end developer</p>
+    </div>
+    <div class="flex flex-col">
+        <h2 class="text-base self-end ml-auto">Media</h2>
+
+        <div class="flex gap-4 mt-4 self-end ml-auto">
+        <a href="#" class="flex gap-1 items-center"> <span><svg width="23" height="17" viewBox="0 0 23 17"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.071875 2.20292C0.216801 1.57709 0.573067 1.01832 1.08232 0.618104C1.59158 0.217889 2.22365 -4.32004e-05 2.875 6.42336e-09H20.125C20.7764 -4.32004e-05 21.4084 0.217889 21.9177 0.618104C22.4269 1.01832 22.7832 1.57709 22.9281 2.20292L11.5 9.0865L0.071875 2.20292ZM0 3.82075V13.8847L8.34181 8.84425L0 3.82075ZM9.71894 9.67583L0.274563 15.3807C0.507907 15.8657 0.876195 16.2753 1.33656 16.5619C1.79693 16.8486 2.33044 17.0005 2.875 17H20.125C20.6695 17.0001 21.2028 16.8479 21.6629 16.561C22.123 16.274 22.491 15.8643 22.724 15.3793L13.2796 9.67442L11.5 10.7468L9.71894 9.67442V9.67583ZM14.6582 8.84567L23 13.8847V3.82075L14.6582 8.84425V8.84567Z"
+                                    fill="#ABB2BF" />
+                            </svg>
+                        </span>
+                        </a>
+                        <a href="#" class="flex gap-1 items-center"> <span><svg width="23" height="17" viewBox="0 0 23 17"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.071875 2.20292C0.216801 1.57709 0.573067 1.01832 1.08232 0.618104C1.59158 0.217889 2.22365 -4.32004e-05 2.875 6.42336e-09H20.125C20.7764 -4.32004e-05 21.4084 0.217889 21.9177 0.618104C22.4269 1.01832 22.7832 1.57709 22.9281 2.20292L11.5 9.0865L0.071875 2.20292ZM0 3.82075V13.8847L8.34181 8.84425L0 3.82075ZM9.71894 9.67583L0.274563 15.3807C0.507907 15.8657 0.876195 16.2753 1.33656 16.5619C1.79693 16.8486 2.33044 17.0005 2.875 17H20.125C20.6695 17.0001 21.2028 16.8479 21.6629 16.561C22.123 16.274 22.491 15.8643 22.724 15.3793L13.2796 9.67442L11.5 10.7468L9.71894 9.67442V9.67583ZM14.6582 8.84567L23 13.8847V3.82075L14.6582 8.84425V8.84567Z"
+                                    fill="#ABB2BF" />
+                            </svg>
+                        </span>
+                        </a>
+                        <a href="#" class="flex gap-1 items-center"> <span><svg width="23" height="17" viewBox="0 0 23 17"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.071875 2.20292C0.216801 1.57709 0.573067 1.01832 1.08232 0.618104C1.59158 0.217889 2.22365 -4.32004e-05 2.875 6.42336e-09H20.125C20.7764 -4.32004e-05 21.4084 0.217889 21.9177 0.618104C22.4269 1.01832 22.7832 1.57709 22.9281 2.20292L11.5 9.0865L0.071875 2.20292ZM0 3.82075V13.8847L8.34181 8.84425L0 3.82075ZM9.71894 9.67583L0.274563 15.3807C0.507907 15.8657 0.876195 16.2753 1.33656 16.5619C1.79693 16.8486 2.33044 17.0005 2.875 17H20.125C20.6695 17.0001 21.2028 16.8479 21.6629 16.561C22.123 16.274 22.491 15.8643 22.724 15.3793L13.2796 9.67442L11.5 10.7468L9.71894 9.67442V9.67583ZM14.6582 8.84567L23 13.8847V3.82075L14.6582 8.84425V8.84567Z"
+                                    fill="#ABB2BF" />
+                            </svg>
+                        </span>
+                        </a>
+    </div>
+</div>
+    </div>
+    <div class="justify-center text-center mb-4">
+        <p>© Copyright 2022. Made by Elias</p>
+    </div>
+</section>
 </body>
 
 </html>
