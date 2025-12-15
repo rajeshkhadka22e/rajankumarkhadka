@@ -140,23 +140,30 @@
         <div class=" relative">
             <div class="max-w-[1024px] mx-auto px-4 sm:px-0">
 
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-
+                <div class="grid grid-cols-1 lg:grid-cols-3 mt-10 gap-6">
 
                     <!-- Legal Avenues -->
                     <div
                         class="flex flex-col border border-[var(--gray)] hover:border-[var(--primary)] transition-all duration-300">
-                        <img src="image/legal_avenues.png" class="h-[150px] object-cover" alt="Legal Avenues" />
+                        <picture>
+                            <source srcset="image/legal_avenues-640.webp" type="image/webp">
+                            <img src="image/legal_avenues-640.png" width="323" height="158"
+                                class="h-[150px] w-full object-cover" alt="Legal Avenues project preview"
+                                loading="lazy">
+                        </picture>
+
                         <h3 class="text-[var(--gray)] text-sm p-4 font-medium border-y">
                             HTML • CSS • JavaScript
                         </h3>
+
                         <div class="space-y-3 p-4">
                             <h4 class="text-xl font-medium text-white">Legal Avenues</h4>
                             <p class="text-sm text-[var(--gray)] line-clamp-3">
                                 Legal services website with dynamic team management and publication services.
                             </p>
                             <div class="flex gap-4">
-                                <a href="https://legalavenues.com.np/" target="_blank"
+                                <a href="https://legalavenues.com.np/" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Visit Legal Avenues live website"
                                     class="p-1 border border-[var(--primary)] hover:border-[var(--gray)] transition-all duration-300">
                                     Live &lt;~&gt;
                                 </a>
@@ -167,17 +174,25 @@
                     <!-- Pegagus Education -->
                     <div
                         class="flex flex-col border border-[var(--gray)] hover:border-[var(--primary)] transition-all duration-300">
-                        <img src="image/image.png" class="h-[150px] object-cover" alt="Pegagus Education" />
+                        <picture>
+                            <source srcset="image/pegagus-640.webp" type="image/webp">
+                            <img src="image/pegagus-640.png" width="323" height="158"
+                                class="h-[150px] w-full object-cover" alt="Pegagus Education project preview"
+                                loading="lazy">
+                        </picture>
+
                         <h3 class="text-[var(--gray)] text-sm p-4 font-medium border-y">
                             React • Education Platform
                         </h3>
+
                         <div class="space-y-3 p-4">
                             <h4 class="text-xl font-medium text-white">Pegagus Education</h4>
                             <p class="text-sm text-[var(--gray)] line-clamp-3">
                                 Education platform with dynamic team and publication management system.
                             </p>
                             <div class="flex gap-4">
-                                <a href="https://pegagus.vercel.app/" target="_blank"
+                                <a href="https://pegagus.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Visit Pegagus Education live website"
                                     class="p-1 border border-[var(--primary)] hover:border-[var(--gray)] transition-all duration-300">
                                     Live &lt;~&gt;
                                 </a>
@@ -188,17 +203,25 @@
                     <!-- Altripmart -->
                     <div
                         class="flex flex-col border border-[var(--gray)] hover:border-[var(--primary)] transition-all duration-300">
-                        <img src="image/altripmart.png" class="h-[150px] object-cover" alt="Altripmart" />
+                        <picture>
+                            <source srcset="image/altripmart-640.webp" type="image/webp">
+                            <img src="image/altripmart-640.png" width="323" height="158"
+                                class="h-[150px] w-full object-cover" alt="Altripmart travel platform project preview"
+                                loading="lazy">
+                        </picture>
+
                         <h3 class="text-[var(--gray)] text-sm p-4 font-medium border-y">
                             Next.js • Travel Platform
                         </h3>
+
                         <div class="space-y-3 p-4">
                             <h4 class="text-xl font-medium text-white">Altripmart</h4>
                             <p class="text-sm text-[var(--gray)] line-clamp-3">
                                 Travel and trekking platform with dynamic routes and service management.
                             </p>
                             <div class="flex gap-4">
-                                <a href="https://altripmart-two.vercel.app/" target="_blank"
+                                <a href="https://altripmart-two.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Visit Altripmart live website"
                                     class="p-1 border border-[var(--primary)] hover:border-[var(--gray)] transition-all duration-300">
                                     Live &lt;~&gt;
                                 </a>
@@ -207,6 +230,7 @@
                     </div>
 
                 </div>
+
 
 
             </div>
@@ -309,8 +333,8 @@
     </section>
 
 
-    <!-- footer  -->
-    <section class="mt-[74px] ">
+   <!-- footer -->
+      <footer class="mt-[74px] ">
         <hr class="border-t border-t-[var(--gray)]" />
         <div class="max-w-[1024px] mx-auto grid grid-cols-1 md:grid-cols-2 mt-4 pb-8">
             <div class="flex flex-col gap-1">
@@ -325,7 +349,8 @@
                     <div class="bg-[#262b33] py-4 rounded-lg flex gap-4 text-gray-300">
 
                         <!-- Facebook -->
-                        <a href="https://www.facebook.com/rajankumarkhadkaa" target="_blank" rel="noopener noreferrer"
+                        <a href="https://www.facebook.com/rajankumarkhadkaa" target="_blank"
+                            aria-label="Visit Facebook profile" rel="noopener noreferrer"
                             class="flex items-center gap-3 hover:text-purple-400 transition">
                             <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
                                 <path
@@ -334,7 +359,8 @@
                         </a>
 
                         <!-- Instagram -->
-                        <a href="https://www.instagram.com/rajankumarkhadkaa/" target="_blank" rel="noopener noreferrer"
+                        <a href="https://www.instagram.com/rajankumarkhadkaa/" target="_blank"
+                            aria-label="Visit Instagram profile" rel="noopener noreferrer"
                             class="flex items-center gap-3 hover:text-purple-400 transition">
                             <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
                                 <path
@@ -343,8 +369,9 @@
                         </a>
 
                         <!-- LinkedIn -->
-                        <a href="https://www.linkedin.com/in/rajankumarkhadka/" target="_blank"
-                            rel="noopener noreferrer" class="flex items-center gap-3 hover:text-purple-400 transition">
+                        <a href="https://www.linkedin.com/in/rajankumarkhadka/" aria-label="Visit LinkedIn profile"
+                            target="_blank" rel="noopener noreferrer"
+                            class="flex items-center gap-3 hover:text-purple-400 transition">
                             <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
                                 <path
                                     d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.266 2.37 4.266 5.455v6.286zM5.337 7.433a2.062 2.062 0 110-4.123 2.062 2.062 0 010 4.123zM6.956 20.452H3.717V9h3.239v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.273V1.727C24 .774 23.2 0 22.222 0z" />
@@ -352,7 +379,7 @@
                         </a>
 
                         <!-- Email -->
-                        <a href="mailto:rajeshkhadka22e@gmail.com"
+                        <a href="mailto:rajeshkhadka22e@gmail.com" aria-label="Send an email" rel="noopener noreferrer"
                             class="flex items-center gap-3 hover:text-purple-400 transition">
                             <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
                                 <path
@@ -367,7 +394,7 @@
         <div class="justify-center text-center mb-4">
             <p>© Copyright 2022. Made by Rajan kumar khadka</p>
         </div>
-    </section>
+    </footer>
 </body>
 
 </html>
